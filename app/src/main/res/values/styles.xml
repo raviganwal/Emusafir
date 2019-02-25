@@ -1,0 +1,173 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorGPlus</item>
+        <item name="android:textSize">@dimen/textSize10</item>
+        <item name="android:fontFamily">@font/montserrat_light</item>
+    </style>
+
+    <style name="success_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:textSize">@dimen/textSize10</item>
+        <item name="android:fontFamily">@font/montserrat_light</item>
+
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/InputLayoutHint</item>
+        <item name="errorTextAppearance">@style/error_appearance</item>
+        <item name="android:textAppearance">@style/InputLayout</item>
+    </style>
+
+    <style name="InputLayoutHint" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/textSize12</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="android:textColorHighlight">@color/colorWhite</item>
+        <item name="android:textColorLink">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="boxStrokeColor">@color/colorWhite</item>
+    </style>
+
+    <style name="InputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/textSize14</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="android:textColorHighlight">@color/colorWhite</item>
+        <item name="android:textColorLink">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="boxStrokeColor">@color/colorWhite</item>
+    </style>
+
+    <style name="StylishProgressBar" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:width">@dimen/activity_vertical_margin</item>
+        <item name="android:height">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="StylishProgressBarSmall" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--<style name="MyButtonFaceBook" parent="Theme.AppCompat.Light">-->
+    <!--<item name="android:fontFamily">@font/roboto_medium</item>-->
+    <!--<item name="colorControlHighlight">@color/colorFb</item>-->
+    <!--<item name="colorButtonNormal">@color/colorFb</item>-->
+    <!--<item name="android:padding">@dimen/activity_vertical_margin</item>-->
+    <!--<item name="android:textSize">@dimen/textSize16</item>-->
+    <!--</style>    -->
+    <style name="MyButtonFaceBook" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="colorControlHighlight">@color/colorFb</item>
+        <item name="colorButtonNormal">@color/colorFb</item>
+        <item name="colorPrimary">@color/colorFb</item>
+        <item name="android:textSize">@dimen/textSize16</item>
+    </style>
+
+    <style name="MyButtonGoogle" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorGPlus</item>
+        <item name="colorButtonNormal">@color/colorGPlus</item>
+        <item name="android:textSize">@dimen/textSize16</item>
+        <item name="android:padding">@dimen/activity_vertical_margin</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="MyButtonBorderlessColored" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorAccentLight</item>
+        <item name="android:textSize">@dimen/textSize16</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="AppTheme.RoundedCornerPrimary" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/btn_primary</item>
+        <item name="android:textSize">@dimen/textSize16</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/montserrat_semi_bold</item>
+    </style>
+
+    <style name="AppTheme.RoundedCornerAccent" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/btn_accent</item>
+        <item name="android:textSize">@dimen/textSize16</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/montserrat_semi_bold</item>
+    </style>
+
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorAccentDark</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/textSize16</item>
+        <item name="android:fontFamily">@font/muli_extra_bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="MyTextView" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorAccentLight</item>
+        <item name="colorButtonNormal">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/textSize28</item>
+        <item name="android:fontFamily">@font/montserrat_semi_bold</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:padding">@dimen/margin10</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+    </style>
+
+    <style name="MyButtonRed" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorRed</item>
+        <item name="colorButtonNormal">@color/colorGPlus</item>
+        <item name="android:textSize">@dimen/textSize16</item>
+        <item name="android:padding">@dimen/activity_vertical_margin</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="MyButtonFlat" parent="Theme.AppCompat.Light">
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="colorAccent">@color/colorAccentDark</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/colorBlackTransparent</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorAccentDark</item>
+        <item name="actionMenuTextColor">@color/colorAccent</item>
+    </style>
+
+    <style name="NavDrawerTextStyle" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/textSize16</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+</resources>

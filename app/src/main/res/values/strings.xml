@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">EMusafir</string>
+
+    <string name="facebook_app_id" translatable="false">345500372668523</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb345500372668523</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="not_connected_to_internet">Sorry! Not connected to internet</string>
+    <string name="connected_to_internet">Good! Connected to Internet</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="fcm_message">FCM Message</string>
+
+    <string name="Name">Name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up">Sign up</string>
+
+    <string name="login">Log In</string>
+
+
+    <string name="liginOrSignup">Log in or sign up to </string>
+    <string name="theLuxurydreams">The Luxury dreams</string>
+    <string name="continuewithfacebook">Continue with Facebook</string>
+    <string name="by_sign_up_you_agree">
+        <![CDATA[<font color="#ffffff">By signing up you agree to our </font> <font color="#7DC8D6"><a href="http://www.google.com">Term and conditions</a></font><font color="#ffffff"> and</font> <font color="#7DC8D6"> <a href="https://acronyms.thefreedictionary.com/T%26C">Privacy Policy.</a></font>
+        ]]></string>
+    <string name="log_in_with_email">Log in with email</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="sign_up_with_email">Sign up with email</string>
+    <string name="facebook">Continue with Facebook</string>
+    <string name="google">Continue with Google</string>
+
+    <string name="error_password_empty">Please enter your password</string>
+    <string name="error_name">Please enter your name</string>
+    <string name="error_mobile">Please enter your 10 digits mobile number</string>
+
+    <string name="error_email_empty">Please enter your email</string>
+    <string name="error_email">Please enter a valid email</string>
+    <string name="error_email_mobile">Please enter a valid email or mobile</string>
+    <string name="error_password">Password length at least 6.</string>
+    <string name="submit">Submit</string>
+    <string name="bullet">\u2022</string>
+    <string name="rupee">\u20B9</string>
+
+    <string name="sure">Sure?</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="search">Search</string>
+    <string name="error_select_city">Source and destination cannot be the same</string>
+    <string name="please_select_destination_city">Please select to city</string>
+    <string name="please_select_source_city">Please select from city</string>
+    <string name="no_data_found">Sorry! no data found</string>
+
+    <string name="plus_more">+ %d more</string>
+    <string name="amenities">Amenities</string>
+
+    <plurals name="numberOfSeats">
+        <item quantity="zero">no seat left</item>
+        <item quantity="one">one seat left</item>
+        <item quantity="other">%d seats left</item>
+    </plurals>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="total_fare">Total Fare</string>
+    <string name="book">Book Now</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="passenger_information">Passenger Information</string>
+    <string name="seat_selection">Seat Selection</string>
+    <string name="seat_no">Seat No.\u0020</string>
+    <string name="total_price">Total Price</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="cancel">Cancel</string>
+    <string name="deselect">Deselect</string>
+    <string name="total">total</string>
+
+    <string name="insurance_t_and_c">Yes, secure my trip with insurance. I agree to the <![CDATA[ <font color="#7DC8D6"><a href="http://bus.eriplinfo.com/frantend/about-us">Terms and Conditions</a></font>]]></string>
+
+</resources>

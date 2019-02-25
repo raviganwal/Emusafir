@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mCardViewBookNow"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mCardViewLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                app:cardCornerRadius="@dimen/margin4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAlreadyUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Already a User? Login Here"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/textSize14" />
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        style="@style/MyButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin4"
+                        android:text="@string/login" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                app:cardCornerRadius="@dimen/margin4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin4"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Contact Details"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/textSize14" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textColorHint="@color/colorHint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:hint="@string/Name"
+                            android:lines="1"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textColorHint="@color/colorPrimaryText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textColorHint="@color/colorHint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:hint="@string/mobile"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLength="10"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textColorHint="@color/colorPrimaryText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textColorHint="@color/colorHint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textColorHint="@color/colorPrimaryText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                app:cardCornerRadius="@dimen/margin4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin4"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Insure your travel by adding Rs 15 per passenger"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/textSize14" />
+
+                    <RadioGroup
+                        android:id="@+id/rgInsurance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/rbInsuranceYes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin2"
+                            android:text="@string/insurance_t_and_c" />
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/rbInsuranceNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin2"
+                            android:text="No, I don't want insurance" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                app:cardCornerRadius="@dimen/margin4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/LinOneWay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvCityOneWAy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:gravity="left|center"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/textSize12" />
+
+                        <TextView
+                            android:id="@+id/tvSeatsOneWay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:gravity="left|center"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/textSize14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinRoundTrip"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvCityRoundTrip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:gravity="left|center"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/textSize12"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvSeatsRoundTrip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:gravity="left|center"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/textSize14"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin8"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="@dimen/margin0"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1.5"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="Insurance Amount"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/textSize14" />
+
+                        <TextView
+                            android:id="@+id/tvInsuranceAmount"
+                            android:layout_width="@dimen/margin0"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:gravity="right|center"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/textSize14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin8"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="@dimen/margin0"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1.5"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="Tax Amount(18% GST)"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/textSize14" />
+
+                        <TextView
+                            android:id="@+id/tvTaxAmount"
+                            android:layout_width="@dimen/margin0"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_weight=".5"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:gravity="right|center"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/textSize14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin8"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="@dimen/margin0"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1.5"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="Sub Total"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/textSize14" />
+
+                        <TextView
+                            android:id="@+id/tvTotal"
+                            android:layout_width="@dimen/margin0"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_weight=".5"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:gravity="right|center"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/textSize14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin8"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="@dimen/margin0"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1.5"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="Total Payable Amount"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/textSize14" />
+
+                        <TextView
+                            android:id="@+id/tvTotalPayableAmount"
+                            android:layout_width="@dimen/margin0"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_weight=".5"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="right|center"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/textSize14" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mCardViewBookNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:animateLayoutChanges="true"
+                android:visibility="visible"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false"
+                app:layout_anchor="@id/container"
+                app:layout_anchorGravity="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvCancel"
+                            android:layout_width="@dimen/margin0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:fontFamily="@font/muli_bold"
+                            android:gravity="center"
+                            android:padding="@dimen/margin10"
+                            android:text="Cancel"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/textSize16" />
+
+                        <TextView
+                            android:id="@+id/tvPayNow"
+                            android:layout_width="@dimen/margin0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorAccent"
+                            android:fontFamily="@font/muli_bold"
+                            android:gravity="center"
+                            android:padding="@dimen/margin10"
+                            android:text="Pay Now"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/textSize16" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

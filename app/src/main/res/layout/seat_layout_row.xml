@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin10"
+        android:fontFamily="@font/muli_regular"
+        android:gravity="center|bottom"
+        android:paddingBottom="@dimen/margin4"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/textSize8" />
+
+</LinearLayout>

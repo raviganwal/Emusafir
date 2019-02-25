@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvDiscardReturn"
+            android:layout_alignParentTop="true"
+            android:layoutAnimation="@anim/layout_animation_fall_down"></androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tvDiscardReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/muli_semibold"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center"
+            android:padding="@dimen/margin10"
+            android:text="Discard Return Booking"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textSize16" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mSwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@color/colorWhiteLight"
+            android:drawableTop="@drawable/ic_cloud_off_black_24dp"
+            android:drawablePadding="@dimen/margin10"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:padding="@dimen/margin10"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/textSize14"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

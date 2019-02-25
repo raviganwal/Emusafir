@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "138511719138",
+    "firebase_url": "https://emusafir-f75fa.firebaseio.com",
+    "project_id": "emusafir-f75fa",
+    "storage_bucket": "emusafir-f75fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138511719138:android:316f497acb7fbce5",
+        "android_client_info": {
+          "package_name": "com.emusafir2019"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138511719138-rc63173elkg2r245gfqgbb1epv4cer5a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emusafir2019",
+            "certificate_hash": "ae4a725aa193d5334a5045e958b0e63ba38504a5"
+          }
+        },
+        {
+          "client_id": "138511719138-lo1aed44n5rvti6ao8htudjmlm3r616h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPlQ3zR08dMqH8SbRwlw3Arqjk8SAM_jk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138511719138-lo1aed44n5rvti6ao8htudjmlm3r616h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

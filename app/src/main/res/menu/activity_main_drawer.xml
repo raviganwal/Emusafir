@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navHome"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/navAboutus"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="About Us" />
+        <item
+            android:id="@+id/navGallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/navCustomerSupport"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Customer support" />
+        <item
+            android:id="@+id/navContactUs"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Contact" />
+        <item
+            android:id="@+id/navLogout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:iconTint="@color/colorAccentDark"
+            android:title="Logout"
+            android:tooltipText="Tap here to logout" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bus_mobile_blur"
+    android:padding="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOneWay"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin30"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin4"
+                android:background="@drawable/btn_accent"
+                android:elevation="@dimen/margin2"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin8"
+                android:paddingRight="@dimen/margin8"
+                android:text="One Way"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/tvRoundTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin30"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin4"
+                android:layout_toRightOf="@+id/tvOneWay"
+                android:background="@drawable/btn_primary"
+                android:elevation="@dimen/margin2"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin8"
+                android:paddingRight="@dimen/margin8"
+                android:text="Round Trip"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSize12" />
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mCardViewCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorFDTr"
+            app:cardCornerRadius="@dimen/margin8"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin4">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvFrom"
+                        style="@style/MyTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/ic_location_city_black_24dp"
+                        android:drawablePadding="@dimen/margin8"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:hint="From" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin2px"
+                        android:layout_below="@+id/tvFrom"
+                        android:background="@color/colorHint" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabSwap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:src="@drawable/ic_import_export_black_24dp"
+                        app:fabSize="mini" />
+
+                    <TextView
+                        android:id="@+id/tvTo"
+                        style="@style/MyTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view1"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/ic_location_city_black_24dp"
+                        android:drawablePadding="@dimen/margin8"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:hint="To" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin2px"
+                        android:layout_below="@+id/tvTo"
+                        android:background="@color/colorHint" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/margin0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin8"
+                        android:paddingLeft="@dimen/margin8">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:paddingTop="@dimen/margin8"
+                            android:text="Depart"
+                            android:textColorHint="@color/colorSecondaryText"
+                            android:textSize="@dimen/textSize12" />
+
+                        <TextView
+                            android:id="@+id/tvDepartDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:paddingTop="@dimen/margin8"
+                            android:paddingBottom="@dimen/margin8"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textColorHint="@color/colorSecondaryText"
+                            android:textSize="@dimen/textSize20" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="@dimen/margin2px"
+                        android:layout_height="@dimen/margin40"
+                        android:layout_gravity="center"
+                        android:background="@color/colorHint"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:id="@+id/linReturn"
+                        android:layout_width="@dimen/margin0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:animateLayoutChanges="true"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin8"
+                        android:paddingLeft="@dimen/margin8"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:paddingTop="@dimen/margin8"
+                            android:text="Return"
+                            android:textColorHint="@color/colorSecondaryText"
+                            android:textSize="@dimen/textSize12" />
+
+                        <TextView
+                            android:id="@+id/tvReturnDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:paddingTop="@dimen/margin8"
+                            android:paddingBottom="@dimen/margin8"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textColorHint="@color/colorSecondaryText"
+                            android:textSize="@dimen/textSize20" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:fontFamily="@font/muli_bold"
+            android:gravity="center"
+            android:text="Search"
+            android:textSize="18sp"
+            app:cornerRadius="@dimen/margin8"
+            app:icon="@drawable/ic_search_black_24dp"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/margin10"
+            app:iconTint="@color/colorWhite"
+            app:rippleColor="@color/colorAccentDark"
+            app:strokeColor="@color/colorWhite"
+            app:strokeWidth="@dimen/margin1" />
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="@dimen/activity_vertical_margin"-->
+        <!--android:src="@drawable/ic_arrow_forward_white_24dp"-->
+        <!--app:backgroundTint="@color/colorAccent"-->
+        <!--app:borderWidth="@dimen/margin5"-->
+        <!--app:fabSize="normal"-->
+        <!--app:rippleColor="@color/colorPrimary"-->
+        <!--app:useCompatPadding="false" />-->
+    </LinearLayout>
+</RelativeLayout>

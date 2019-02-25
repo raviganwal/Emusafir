@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bus_mobile_blur_dark"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin40"
+        android:background="@drawable/tv_half"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:paddingLeft="@dimen/margin30"
+        android:paddingTop="@dimen/margin8"
+        android:paddingRight="@dimen/margin24"
+        android:paddingBottom="@dimen/margin8"
+        android:text="SKIP"
+        android:fontFamily="@font/muli_light"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/textSize14"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:padding="@dimen/margin8"
+            android:text="@string/liginOrSignup"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textSize20" />
+
+        <View
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin1"
+            android:layout_gravity="center"
+            android:background="@drawable/small_divider" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone"
+            app:com_facebook_login_text="@string/facebook" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLoginFb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin30"
+            android:backgroundTint="@color/colorFb"
+            android:fontFamily="@font/muli_semibold"
+            android:paddingLeft="@dimen/margin20"
+            android:paddingTop="@dimen/margin12"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/margin12"
+            android:text="@string/facebook"
+            android:textAllCaps="false"
+            android:textSize="@dimen/textSize16"
+            app:cornerRadius="@dimen/margin30"
+            app:icon="@drawable/facebook"
+            app:iconSize="@dimen/margin20" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin4"
+            android:backgroundTint="@color/colorGPlus"
+            android:fontFamily="@font/muli_semibold"
+            android:paddingLeft="@dimen/margin20"
+            android:paddingTop="@dimen/margin12"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/margin12"
+            android:text="@string/google"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textSize16"
+            app:cornerRadius="@dimen/margin30"
+            app:icon="@drawable/google_plus"
+            app:iconSize="@dimen/margin20" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin8"
+            android:layout_marginBottom="@dimen/margin8">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin2px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/tv"
+                android:background="@color/colorWhiteLight" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/montserrat_light"
+                android:padding="@dimen/margin10"
+                android:text="or"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhiteLight"
+                android:textSize="@dimen/textSize14" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin2px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/tv"
+                android:background="@color/colorWhiteLight" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tvLogIn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="@dimen/margin0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli_regular"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/log_in_with_email"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSize16" />
+
+            <View
+                android:layout_width="@dimen/margin2"
+                android:layout_height="@dimen/margin20"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin4"
+                android:layout_marginRight="@dimen/margin4"
+                android:background="@drawable/small_divider" />
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="@dimen/margin0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/sign_up_with_email"
+                android:textAlignment="center"
+                android:fontFamily="@font/muli_regular"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSize16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTandC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/montserrat_light"
+        android:padding="@dimen/margin20"
+        android:text="@string/by_sign_up_you_agree"
+        android:textAlignment="center"
+        android:textSize="@dimen/textSize12" />
+
+</RelativeLayout>
+
