@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.emusafir.booking.BookingListActivity;
 import com.emusafir.fragments.LogoutDialogFragment;
 import com.emusafir.interfaces.OnDateSelected;
 import com.emusafir.model.CityModel;
@@ -290,13 +291,16 @@ public class MainActivity extends AppCompatActivity
         switch (id) {
             case R.id.navLogout:
                 Checkout.clearUserData(getApplicationContext());
-                Checkout.clearUserData(getApplicationContext());
                 mSessionManager.setLoginSession(false);
                 LogoutDialogFragment addPhotoBottomDialogFragment =
                         LogoutDialogFragment.newInstance(0);
                 addPhotoBottomDialogFragment.show(getSupportFragmentManager(),
                         "add_photo_dialog_fragment");
                 break;
+            case R.id.navBooking:
+                startActivity(new Intent(MainActivity.this, BookingListActivity.class));
+                break;
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

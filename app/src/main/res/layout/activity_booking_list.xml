@@ -20,7 +20,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_booking" />
+    <include layout="@layout/content_booking_list" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

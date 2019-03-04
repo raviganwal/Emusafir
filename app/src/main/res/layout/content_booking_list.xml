@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFDTr"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CityActivity"
+    tools:showIn="@layout/activity_booking_list">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin8"
+            android:background="@drawable/border"
+            android:padding="@dimen/margin2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/fab"
+                android:background="@null"
+                android:digits="0123456789"
+                android:fontFamily="@font/muli_regular"
+                android:hint="PNR No/Mobile No"
+                android:inputType="number"
+                android:padding="@dimen/margin10"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/textSize14" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin4"
+                app:fabSize="mini"
+                app:rippleColor="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_arrow_forward_white_24dp"
+                app:tint="@color/colorWhite"
+                app:useCompatPadding="false" />
+        </RelativeLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mSwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rel"
+            android:visibility="visible">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutAnimation="@anim/layout_animation_fall_down"></androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/ic_cloud_off_black_24dp"
+            android:drawablePadding="@dimen/margin10"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/textSize14"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</RelativeLayout>

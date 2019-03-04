@@ -83,7 +83,6 @@
             android:name="com.emusafir.userauth.LoginActivity"
             android:label="@string/login"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden|adjustPan">
 
             <!-- <meta-data -->
@@ -94,7 +93,6 @@
             android:name="com.emusafir.userauth.SignUpActivity"
             android:label="@string/sign_up"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden|adjustPan">
 
             <!-- <meta-data -->
@@ -105,7 +103,6 @@
             android:name="com.emusafir.userauth.VerifyOTPactivity"
             android:label="Verify OTP"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -157,6 +154,12 @@
         <activity
             android:name="com.emusafir.PassengerDetailsActivity"
             android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.emusafir.booking.BookingListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="My Bookings"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
 
         <meta-data
             android:name="com.razorpay.ApiKey"

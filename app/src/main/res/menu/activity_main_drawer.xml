@@ -10,6 +10,11 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="Home" />
         <item
+            android:id="@+id/navBooking"
+            android:icon="@drawable/ic_receipt_black_24dp"
+            android:title="My Bookings" />
+
+        <item
             android:id="@+id/navAboutus"
             android:icon="@drawable/ic_menu_gallery"
             android:title="About Us" />
