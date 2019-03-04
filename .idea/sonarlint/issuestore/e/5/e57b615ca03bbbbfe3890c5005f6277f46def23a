@@ -1,0 +1,77 @@
+
+ssquid:S1450M"WRemove the "imageUrl" field and declare it as a local variable in the relevant methods.(½àåèþÿÿÿÿ
+}squid:S1488™"`Immediately return this expression instead of assigning it to the temporary variable "myBitmap".(ˆÜ¬¦ûÿÿÿÿ
+bsquid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(ÕØªÐ
+Bsquid:S1659M"&Declare "birthday" on a separate line.(½àåèþÿÿÿÿ
+bsquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(Â¹ðO
+[squid:UnusedPrivateMethodo"1Remove this unused private "printKeyHash" method.(õ­àûÿÿÿÿ
+Xsquid:UnusedPrivateMethodÊ"-Remove this unused private "updateUI" method.(²Í½ùÿÿÿÿ
+`squid:S1192ü"IDefine a constant instead of duplicating this literal "birthday" 6 times.(Ë•ÿ#
+^squid:S1192Ø"FDefine a constant instead of duplicating this literal "email" 6 times.(öïÅý
+qsquid:S1450O"URemove the "tvSkip" field and declare it as a local variable in the relevant methods.(Êƒ¼ûÿÿÿÿ
+gsquid:CommentedOutCodeLine]"<This block of commented-out lines of code should be removed.(®‚ÿÿÿÿÿ
+hsquid:CommentedOutCodeLineÊ"<This block of commented-out lines of code should be removed.(Â™†úÿÿÿÿ
+csquid:CommentedOutCodeLineø"<This block of commented-out lines of code should be removed.(¶•ê»
+Asquid:S1659M"%Declare "address" on a separate line.(½àåèþÿÿÿÿ
+bsquid:S1192ë"JDefine a constant instead of duplicating this literal "last_name" 6 times.(Ÿ‡Øó
+csquid:CommentedOutCodeLine‰"<This block of commented-out lines of code should be removed.(óçŒþ
+psquid:S1450I"YRemove the "btnLoginFb" field and declare it as a local variable in the relevant methods.(›Þê¨
+bsquid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(—¥óÂ
+csquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(³ÓÂ°
+csquid:CommentedOutCodeLineø"<This block of commented-out lines of code should be removed.(¯ïý
+gsquid:CommentedOutCodeLineV"<This block of commented-out lines of code should be removed.(ÿ¯¼»ýÿÿÿÿ
+osquid:S1450I"XRemove the "btnSignIn" field and declare it as a local variable in the relevant methods.(›Þê¨
+\squid:UnusedPrivateMethod·"7Remove this unused private "showProgressDialog" method.(ÓŸ×K
+hsquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(Ÿçþ³ûÿÿÿÿ
+csquid:CommentedOutCodeLine¢"<This block of commented-out lines of code should be removed.(ñ±™Œ
+gsquid:CommentedOutCodeLine["<This block of commented-out lines of code should be removed.(—’‹ãûÿÿÿÿ
+Isquid:S1068N"-Remove this unused "thumbnail" private field.(¾ø­©ýÿÿÿÿ
+bsquid:CommentedOutCodeLineÍ"<This block of commented-out lines of code should be removed.(ÖÅŸ=
+@squid:S1148á"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+@squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+csquid:CommentedOutCodeLineš"<This block of commented-out lines of code should be removed.(Òåß„
+gsquid:CommentedOutCodeLinem"<This block of commented-out lines of code should be removed.(Èå––ÿÿÿÿÿ
+csquid:S1192æ"KDefine a constant instead of duplicating this literal "first_name" 6 times.(’ ÖÎ
+Hsquid:S1068M",Remove this unused "birthday" private field.(½àåèþÿÿÿÿ
+csquid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(Ùô±Ü
+[squid:S2147{"ECombine this catch with the one at line 121, which has the same body.(ÿÒ„p
+jsquid:S00117Û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ê‡Ç
+@squid:S1148‚"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+csquid:CommentedOutCodeLine”"<This block of commented-out lines of code should be removed.(¢·¾³
+@squid:S00108y")Either remove or fill this block of code.(ïõÙE
+Jsquid:S1068F".Remove this unused "FB_SIGN_IN" private field.(Ü½­ïÿÿÿÿÿ
+hsquid:CommentedOutCodeLineý"<This block of commented-out lines of code should be removed.(Àñ¤Óúÿÿÿÿ
+csquid:CommentedOutCodeLine—"<This block of commented-out lines of code should be removed.(Ú¨‚
+@squid:S1659O"$Declare "tvSkip" on a separate line.(Êƒ¼ûÿÿÿÿ
+hsquid:CommentedOutCodeLine´"<This block of commented-out lines of code should be removed.(ÆˆåÝùÿÿÿÿ
+csquid:CommentedOutCodeLine„"<This block of commented-out lines of code should be removed.(‚ç¤º
+@squid:S00108{")Either remove or fill this block of code.(ÿÒ„p
+csquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(íÆËõ
+rsquid:S1450O"VRemove the "tvTandC" field and declare it as a local variable in the relevant methods.(Êƒ¼ûÿÿÿÿ
+hsquid:CommentedOutCodeLine¯"<This block of commented-out lines of code should be removed.(ðêüÿÿÿÿ
+`squid:S1192"IDefine a constant instead of duplicating this literal "location" 6 times.(ûÿŸ$
+gsquid:CommentedOutCodeLineb"<This block of commented-out lines of code should be removed.(„—çÁüÿÿÿÿ
+csquid:CommentedOutCodeLineÜ"<This block of commented-out lines of code should be removed.(¼óøó
+hsquid:CommentedOutCodeLinež"<This block of commented-out lines of code should be removed.(å­šÌûÿÿÿÿ
+rsquid:S1450M"VRemove the "address" field and declare it as a local variable in the relevant methods.(½àåèþÿÿÿÿ
+hsquid:CommentedOutCodeLine¥"<This block of commented-out lines of code should be removed.(Ùü±„úÿÿÿÿ
+Gsquid:S1068M"+Remove this unused "address" private field.(½àåèþÿÿÿÿ
+ssquid:S1450M"WRemove the "birthday" field and declare it as a local variable in the relevant methods.(½àåèþÿÿÿÿ
+Bsquid:S1659M"&Declare "imageUrl" on a separate line.(½àåèþÿÿÿÿ
+hsquid:CommentedOutCodeLineÖ"<This block of commented-out lines of code should be removed.(°òÙùÿÿÿÿ
+V"squid:SwitchLastCaseIsDefaultCheck¾""Add a default case to this switch.(×“¾ñùÿÿÿÿ
+bsquid:CommentedOutCodeLineY"<This block of commented-out lines of code should be removed.(›À¯
+bsquid:CommentedOutCodeLineú"<This block of commented-out lines of code should be removed.(ë­£7
+hsquid:CommentedOutCodeLine†"<This block of commented-out lines of code should be removed.(éåõÃûÿÿÿÿ
+Rsquid:S1141Ú"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Osquid:S2589¼"7Remove this expression which always evaluates to "true"(€ÞüŸ
+?squid:S1659I"(Declare "btnLoginFb" on a separate line.(›Þê¨
+nsquid:S1450J"WRemove the "tvSignUp" field and declare it as a local variable in the relevant methods.(Ì½•ý
+msquid:S1450J"VRemove the "tvLogIn" field and declare it as a local variable in the relevant methods.(Ì½•ý
+hsquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(ãóîüÿÿÿÿ
+Bsquid:S00108Î")Either remove or fill this block of code.(å¥ž‡
+csquid:CommentedOutCodeLineô"<This block of commented-out lines of code should be removed.(Ÿé»ç
+;squid:S1148õ"#Use a logger to log this exception.(òçøì
+]squid:UnusedPrivateMethodÃ"7Remove this unused private "hideProgressDialog" method.(ÔÓÉƒ
+=squid:S1659J"&Declare "tvSignUp" on a separate line.(Ì½•ý
+hsquid:CommentedOutCodeLineË"<This block of commented-out lines of code should be removed.(Îºÿ©ûÿÿÿÿ

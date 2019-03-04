@@ -8,7 +8,7 @@
         android:fillType="evenOdd"
         android:pathData="M6,1L32,1C34.761,1 37,3.239 37,6L37,66C37,68.761 34.761,71 32,71L6,71C3.239,71 1,68.761 1,66L1,6C1,3.239 3.239,1 6,1Z"
         android:strokeWidth="2"
-        android:strokeColor="#E6FFFFFF"
+        android:strokeColor="#838383"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path

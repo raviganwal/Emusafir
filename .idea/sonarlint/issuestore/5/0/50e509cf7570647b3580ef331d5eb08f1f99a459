@@ -1,0 +1,17 @@
+
+psquid:S14500"YRemove the "searchView" field and declare it as a local variable in the relevant methods.(‰Ôô¦
+Fsquid:S19056"*Remove this unnecessary cast to "Toolbar".(ªü–ıÿÿÿÿ
+csquid:CommentedOutCodeLine»"<This block of commented-out lines of code should be removed.(³¿á•
+csquid:CommentedOutCodeLineÂ"<This block of commented-out lines of code should be removed.(úÜ‹
+ysquid:S4144°"bUpdate this method so that its implementation is not identical to "onQueryTextSubmit" on line 169.(‡Ñ¸P
+bsquid:CommentedOutCodeLineE"<This block of commented-out lines of code should be removed.(À¸—ï
+hsquid:CommentedOutCodeLine¿"<This block of commented-out lines of code should be removed.(›¢¼Äüÿÿÿÿ
+gsquid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(ä†¤ˆşÿÿÿÿ
+hsquid:CommentedOutCodeLineÇ"<This block of commented-out lines of code should be removed.(™ÕÃ¼şÿÿÿÿ
+gsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(ŸĞ½ÿÿÿÿÿ
+gsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(†ÿ£²ıÿÿÿÿ
+hsquid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(ÚÓ¡·üÿÿÿÿ
+csquid:CommentedOutCodeLineÄ"<This block of commented-out lines of code should be removed.(Üîæİ
+gsquid:S1301{"KReplace this "switch" statement by "if" statements to increase readability.(ƒ”¤Æşÿÿÿÿ
+@squid:S1148”"#Use a logger to log this exception.(¯Óí‘úÿÿÿÿ
+@squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

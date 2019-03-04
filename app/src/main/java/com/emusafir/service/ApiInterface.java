@@ -39,10 +39,17 @@ public interface ApiInterface {
     @POST("search_bus_list")
     Call<ResponseBody> search_bus_list(@FieldMap HashMap<String, String> hm);
 
-    //onProgress
     @FormUrlEncoded
     @POST("bus_layout")
     Call<ResponseBody> bus_layout(@FieldMap HashMap<String, String> hm);
+
+    @FormUrlEncoded
+    @POST("booking_list")
+    Call<ResponseBody> booking_list(@FieldMap HashMap<String, String> hm);
+
+    @FormUrlEncoded
+    @POST("booked_ticket_details")
+    Call<ResponseBody> booked_ticket_details(@FieldMap HashMap<String, String> hm);
 
     @POST("bookingseats")
     Call<ResponseBody> bookingseats(@Body RequestBody param);

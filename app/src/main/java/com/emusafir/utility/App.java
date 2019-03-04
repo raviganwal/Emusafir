@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.ComponentCallbacks2;
 
 import com.facebook.FacebookSdk;
+import com.google.firebase.FirebaseApp;
 import com.razorpay.Checkout;
 
 //import android.content.Context;

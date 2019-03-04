@@ -1,0 +1,7 @@
+
+fsquid:S00100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù«ª¬
+fsquid:S00100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ÿîµ
+fsquid:S00100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôû¿®
+rsquid:S00100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŽëÛùûÿÿÿÿ8£ìá—’-
+`squid:UselessImportCheck"0Remove this unused import 'org.json.JSONObject'.(œÖ´üþÿÿÿÿ8£ìá—’-
+^squid:UselessImportCheck"3Remove this unused import 'retrofit2.http.Headers'.(…ŒÏó8£ìá—’-

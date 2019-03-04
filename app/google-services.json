@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "138511719138",
-    "firebase_url": "https://emusafir-f75fa.firebaseio.com",
-    "project_id": "emusafir-f75fa",
-    "storage_bucket": "emusafir-f75fa.appspot.com"
+    "project_number": "938171418705",
+    "firebase_url": "https://emusafir-14cee.firebaseio.com",
+    "project_id": "emusafir-14cee",
+    "storage_bucket": "emusafir-14cee.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:138511719138:android:316f497acb7fbce5",
+        "mobilesdk_app_id": "1:938171418705:android:d2e8ff53573acf19",
         "android_client_info": {
           "package_name": "com.emusafir2019"
         }
       },
       "oauth_client": [
         {
-          "client_id": "138511719138-rc63173elkg2r245gfqgbb1epv4cer5a.apps.googleusercontent.com",
+          "client_id": "938171418705-2b3g9nbss8pa4fk08mgc3eko550iqh3s.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.emusafir2019",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "138511719138-lo1aed44n5rvti6ao8htudjmlm3r616h.apps.googleusercontent.com",
+          "client_id": "938171418705-4e9t89t8kks3njtfld56i795nf80tlgu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBPlQ3zR08dMqH8SbRwlw3Arqjk8SAM_jk"
+          "current_key": "AIzaSyD6HKMChzIUl46arC8H_5YzoNrKMa6EoD8"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "138511719138-lo1aed44n5rvti6ao8htudjmlm3r616h.apps.googleusercontent.com",
+              "client_id": "938171418705-4e9t89t8kks3njtfld56i795nf80tlgu.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

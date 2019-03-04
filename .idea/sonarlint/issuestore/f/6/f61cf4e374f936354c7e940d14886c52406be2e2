@@ -1,0 +1,37 @@
+
+?squid:S1659\"(Declare "to_from_id" on a separate line.(¨‹Æé
+nsquid:S00117u"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûËàÊøÿÿÿÿ
+Csquid:S1659u"'Declare "book_date" on a separate line.(ûËàÊøÿÿÿÿ
+Dsquid:S1659Œ" Declare "to" on a separate line.(ûËàÊøÿÿÿÿ8Ìî®ö-
+xsquid:S1488{"\Immediately return this expression instead of assigning it to the temporary variable "user".(…Ğ»Úøÿÿÿÿ
+Asquid:S1659\"*Declare "to_from_name" on a separate line.(¨‹Æé
+isquid:S00117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨‹Æé
+nsquid:S00117u"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûËàÊøÿÿÿÿ
+@squid:S1659\")Declare "onward_date" on a separate line.(¨‹Æé
+osquid:S00117Œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûËàÊøÿÿÿÿ
+?squid:S1659¢""Declare "name" on a separate line.(İ†ƒüÿÿÿÿ
+Esquid:S1659u""Declare "from" on a separate line.(ûËàÊøÿÿÿÿ8¢«§ö-
+Asquid:S1659¢"$Declare "mobile" on a separate line.(İ†ƒüÿÿÿÿ
+tsquid:S1488§"\Immediately return this expression instead of assigning it to the temporary variable "user".(­³ÎÛ
+psquid:S00116"SRename this field "_context" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú§Ğşÿÿÿÿ
+isquid:S00117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨‹Æé
+isquid:S00117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨‹Æé
+osquid:S00117Œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûËàÊøÿÿÿÿ
+Asquid:S1659\"*Declare "to_city_name" on a separate line.(¨‹Æé
+Csquid:S1659Œ"&Declare "route_id" on a separate line.(ûËàÊøÿÿÿÿ
+osquid:S00117Œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûËàÊøÿÿÿÿ
+Dsquid:S1659Œ"'Declare "book_date" on a separate line.(ûËàÊøÿÿÿÿ
+Fsquid:S1659Œ""Declare "from" on a separate line.(ûËàÊøÿÿÿÿ8Ìî®ö-
+isquid:S00117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨‹Æé
+Csquid:S1659u" Declare "to" on a separate line.(ûËàÊøÿÿÿÿ8¢«§ö-
+ssquid:S1488d"\Immediately return this expression instead of assigning it to the temporary variable "user".(¤Ã©
+tsquid:S00116"WRename this field "PRIVATE_MODE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š£Š„şÿÿÿÿ
+@squid:S1659¢"#Declare "email" on a separate line.(İ†ƒüÿÿÿÿ
+ysquid:S1488’"\Immediately return this expression instead of assigning it to the temporary variable "user".(…Ğ»Úøÿÿÿÿ
+?squid:S1659\"(Declare "to_city_id" on a separate line.(¨‹Æé
+isquid:S00117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨‹Æé
+nsquid:S00117u"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûËàÊøÿÿÿÿ
+Bsquid:S1659u"&Declare "route_id" on a separate line.(ûËàÊøÿÿÿÿ
+isquid:S00117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨‹Æé
+@squid:S1659\")Declare "return_date" on a separate line.(¨‹Æé
+isquid:S00117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨‹Æé

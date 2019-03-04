@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFDTr"
+    android:padding="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CityActivity"
+    tools:showIn="@layout/activity_booking_details">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin4"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Journey Details"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/textSize14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="@dimen/margin8">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingTop="@dimen/margin4"
+                    android:paddingBottom="@dimen/margin4"
+                    android:text="Indore"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/textSize12" />
+
+                <TextView
+                    android:id="@+id/tvDepartureTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_trending_flat_black_24dp"
+                    android:fontFamily="@font/muli_semibold"
+                    android:paddingLeft="@dimen/margin4"
+                    android:paddingRight="@dimen/margin4"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingTop="@dimen/margin4"
+                    android:paddingBottom="@dimen/margin4"
+                    android:text="Jaora"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/textSize12" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="PNR NO"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_bold"
+                android:paddingTop="@dimen/margin2"
+                android:text="15513410111"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/textSize14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingTop="@dimen/margin4"
+                android:text="Date of Journey"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_bold"
+                android:paddingTop="@dimen/margin2"
+                android:text="15513410111"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/textSize14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingTop="@dimen/margin4"
+                android:text="Boarding Point"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingTop="@dimen/margin2"
+                android:text="Jaora"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/textSize14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingTop="@dimen/margin4"
+                android:text="Dropping Point"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingTop="@dimen/margin2"
+                android:text="Railway"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/textSize14" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/margin4"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Contact Details"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/textSize14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:padding="@dimen/margin8">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:paddingTop="@dimen/margin2"
+                    android:text="Ravinder Kumar"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="8962328415"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="raviganwal1992@gmail.com"
+                    android:textColor="@color/colorPrimaryText" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin4"
+                android:text="Payment Info"
+                android:textColor="@color/colorHint"
+                android:textSize="@dimen/textSize14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:padding="@dimen/margin8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="@dimen/margin0"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1.5"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Payment Made Through"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/textSize14" />
+
+                    <TextView
+                        android:layout_width="@dimen/margin0"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="right|center"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/textSize14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin8"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="@dimen/margin0"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1.5"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Insurance Amount"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/textSize14" />
+
+                    <TextView
+                        android:id="@+id/tvInsuranceAmount"
+                        android:layout_width="@dimen/margin0"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="right|center"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/textSize14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin8"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="@dimen/margin0"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1.5"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Tax Amount(18% GST)"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/textSize14" />
+
+                    <TextView
+                        android:id="@+id/tvTaxAmount"
+                        android:layout_width="@dimen/margin0"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_weight=".5"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="right|center"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/textSize14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin8"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="@dimen/margin0"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1.5"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Sub Total"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/textSize14" />
+
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        android:layout_width="@dimen/margin0"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_weight=".5"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="right|center"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/textSize14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin8"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="@dimen/margin0"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1.5"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Total Amount"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/textSize14" />
+
+                    <TextView
+                        android:id="@+id/tvTotalAmount"
+                        android:layout_width="@dimen/margin0"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_weight=".5"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:gravity="right|center"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/textSize14" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

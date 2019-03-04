@@ -1,0 +1,9 @@
+
+Qsquid:S2864"4Iterate over the "entrySet" instead of the "keySet".(Ίώ³ÿÿÿÿÿ
+psquid:S22933"YReplace the type specification in this constructor call with the diamond operator ("<>").(›έ†™
+usquid:S2293e"YReplace the type specification in this constructor call with the diamond operator ("<>").(ώνιψÿÿÿÿ
+vsquid:S2293‹"YReplace the type specification in this constructor call with the diamond operator ("<>").(ώνιψÿÿÿÿ
+qsquid:S2293”"YReplace the type specification in this constructor call with the diamond operator ("<>").(ΰνζ
+isquid:S37761"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ΊξªΏ
+Asquid:S1172_"*Remove this unused method parameter "uri".(΄Ζ•υ
+@squid:S1148™"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ

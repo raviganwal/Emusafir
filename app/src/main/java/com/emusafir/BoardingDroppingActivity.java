@@ -100,7 +100,7 @@ public class BoardingDroppingActivity extends AppCompatActivity implements Notif
     @Override
     public void notifyPointLayout(PointModel model, boolean isBoarding) {
         if (isBoarding) {
-            mBoardingPoint = model.getStopPointId();
+            mBoardingPoint = model.getId();
 
             if (App.getInstance().getPrefManager().getOneWayOrRoundTripOnProgress().equalsIgnoreCase(Constant.ONE_WAY)) {
                 App.getInstance().getPrefManager().setOneWayBoardingPoint(mBoardingPoint);
@@ -110,7 +110,7 @@ public class BoardingDroppingActivity extends AppCompatActivity implements Notif
 
             tabLayout.getTabAt(1).select();
         } else {
-            mDroppingPoint = model.getStopPointId();
+            mDroppingPoint = model.getId();
 //            tabLayout.getTabAt(0).select();
             if (App.getInstance().getPrefManager().getOneWayOrRoundTripOnProgress().equalsIgnoreCase(Constant.ROUND_TRIP)) {
                 App.getInstance().getPrefManager().setOneWayDroppingPoint(mDroppingPoint);

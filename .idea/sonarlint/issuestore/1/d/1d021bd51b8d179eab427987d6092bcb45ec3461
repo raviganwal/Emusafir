@@ -1,0 +1,17 @@
+
+V"squid:SwitchLastCaseIsDefaultCheck–""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+gsquid:CommentedOutCodeLinek"<This block of commented-out lines of code should be removed.(Ù÷žñùÿÿÿÿ
+gsquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(µƒª™ÿÿÿÿÿ
+gsquid:CommentedOutCodeLineh"<This block of commented-out lines of code should be removed.(›¢¼Äüÿÿÿÿ
+gsquid:CommentedOutCodeLineo"<This block of commented-out lines of code should be removed.(™ÕÃ¼þÿÿÿÿ
+bsquid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(éæ‰ö
+˜squid:S1186T"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ž¦›Í
+bsquid:UselessImportCheck
+"7Remove this unused import 'com.emusafir.utility.Utils'.(’ä¢Ì8¥©Â¢‘-
+squid:S1186O"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(½Ä³ïþÿÿÿÿ
+gsquid:CommentedOutCodeLineA"<This block of commented-out lines of code should be removed.(ìúæ¿ýÿÿÿÿ
+bsquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(³¿á•
+hsquid:S1301–"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ
+usquid:S1450%"YRemove the "mViewPager" field and declare it as a local variable in the relevant methods.(Õîµýúÿÿÿÿ
+bsquid:CommentedOutCodeLine]"<This block of commented-out lines of code should be removed.(ÿ—Ò¼
+€squid:S1450"dRemove the "mSectionsPagerAdapter" field and declare it as a local variable in the relevant methods.(ÝÅýþÿÿÿÿ

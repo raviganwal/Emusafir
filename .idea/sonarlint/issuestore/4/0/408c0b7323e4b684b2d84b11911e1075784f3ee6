@@ -1,0 +1,7 @@
+
+csquid:CommentedOutCodeLine¡"<This block of commented-out lines of code should be removed.(§õñ±
+Zsquid:S1126›"BReplace this if-then-else statement by a single method invocation.(ã²¢Ë
+isquid:S37761"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(²Óü½
+Fsquid:S3398d"#Move this method into "ViewHolder".(ËÄ¹¶üÿÿÿÿ8ßµÑž‘-
+.squid:S2176Q"Rename this class.(Â×žÖúÿÿÿÿ
+Šsquid:S4165&"nRemove this useless assignment; "mCardViewBookNow" already holds the assigned value along all execution paths.(ìÔÎ¬ûÿÿÿÿ

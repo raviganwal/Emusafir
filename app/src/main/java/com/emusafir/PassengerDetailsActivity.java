@@ -380,7 +380,7 @@ public class PassengerDetailsActivity extends AppCompatActivity implements View.
         apiService.bookingseats(body).enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                Log.e(TAG, "call " + call.request().toString());
+                Log.e(TAG, "call " + call.request().body());
                 if (mMyProgressDialog.isShowing())
                     mMyProgressDialog.dismiss();
 

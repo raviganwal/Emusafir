@@ -23,7 +23,7 @@ import com.google.firebase.iid.InstanceIdResult;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SplashActivity extends AppCompatActivity implements ConnectivityReceiver.ConnectivityReceiverListener {
+public class SplashActivity extends AppCompatActivity  {
     private static final String TAG = SplashActivity.class.getSimpleName();
 //    private static final int PERMISSION_CALLBACK_CONSTANT = 100;
 //    private static final int REQUEST_PERMISSION_SETTING = 101;
@@ -78,7 +78,6 @@ public class SplashActivity extends AppCompatActivity implements ConnectivityRec
     protected void onResume() {
         super.onResume();
         // register connection status listener
-        App.getInstance().setConnectivityListener(this);
 
     }
 
@@ -301,8 +300,4 @@ public class SplashActivity extends AppCompatActivity implements ConnectivityRec
 //        }
 //    }
 
-    @Override
-    public void onNetworkConnectionChanged(boolean isConnected) {
-        showSnack(isConnected);
-    }
 }

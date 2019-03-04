@@ -1,0 +1,11 @@
+
+Csquid:S1068"'Remove this unused "TAG" private field.(¤®ôßþÿÿÿÿ
+Jsquid:S1068".Remove this unused "mViewPager" private field.(Õîµýúÿÿÿÿ
+nsquid:S1450"WRemove the "mAdapter" field and declare it as a local variable in the relevant methods.(ÞçîŠ
+xsquid:S1450"\Remove the "mRecyclerView" field and declare it as a local variable in the relevant methods.(Òéýÿÿÿÿ
+bsquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(Ô“¼Ì
+gsquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(ä˜«‘ûÿÿÿÿ
+bsquid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(ü°®Ý
+gsquid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(¼è÷ïøÿÿÿÿ
+>squid:S1185+"(Remove this method to simply inherit it.(¥Ë©
+ksquid:S00116"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤®ôßþÿÿÿÿ

@@ -35,4 +35,10 @@ public class Constant {
     public static final String FEMALE = "female";
 
     public static final String GOTO_WHICH_SCREEN = "com.emusafir.utility.whichscreen";
+
+    public static final String CANCEL = "0";
+    public static final String PENDING = "1";
+    public static final String CONFIRM = "2";
+    public static final String FAILED = "3";
+
 }
