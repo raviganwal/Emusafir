@@ -1,40 +1,40 @@
 
-Fsquid:S1905="*Remove this unnecessary cast to "Toolbar".(ªü–ıÿÿÿÿ
-osquid:ModifiersOrderCheck)"EReorder the modifiers to comply with the Java Language Specification.(”Æµ•ÿÿÿÿÿ
-hsquid:S1301¢"KReplace this "switch" statement by "if" statements to increase readability.(Ò“ÿšùÿÿÿÿ
-gsquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(É´½±ÿÿÿÿÿ
-Vsquid:S1854¢"9Remove this useless assignment to local variable "mStr1".(øšäüÿÿÿÿ
-osquid:S1450+"XRemove the "btnSearch" field and declare it as a local variable in the relevant methods.(·×Â
-nsquid:S00117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ÆÃ‹ùÿÿÿÿ
->squid:S1659,""Declare "tvTo" on a separate line.(˜åÁ°ùÿÿÿÿ
-hsquid:CommentedOutCodeLine×"<This block of commented-out lines of code should be removed.(ª¿†—úÿÿÿÿ
-Msquid:S1905Q"1Remove this unnecessary cast to "NavigationView".(üûÍøÿÿÿÿ
-hsquid:CommentedOutCodeLine°"<This block of commented-out lines of code should be removed.(äŠ ¶şÿÿÿÿ
-Ksquid:S1905K"/Remove this unnecessary cast to "DrawerLayout".(ĞÍè¨şÿÿÿÿ
-Bsquid:S16593"&Declare "mToModel" on a separate line.(É¬ô®úÿÿÿÿ
-csquid:CommentedOutCodeLine½"<This block of commented-out lines of code should be removed.(Á Ò
-Esquid:S1659,")Declare "tvRoundTrip" on a separate line.(˜åÁ°ùÿÿÿÿ
-hsquid:CommentedOutCodeLine•"<This block of commented-out lines of code should be removed.(Ù÷ñùÿÿÿÿ
-hsquid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(™ÕÃ¼şÿÿÿÿ
-hsquid:CommentedOutCodeLine•"<This block of commented-out lines of code should be removed.(¯¬ÃÔøÿÿÿÿ
-Fsquid:S1659,"*Declare "tvDepartDate" on a separate line.(˜åÁ°ùÿÿÿÿ
-hsquid:CommentedOutCodeLine‰"<This block of commented-out lines of code should be removed.(å„ç„ÿÿÿÿÿ
-csquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³¿á•
-Fsquid:S1659,"*Declare "tvReturnDate" on a separate line.(˜åÁ°ùÿÿÿÿ
-jsquid:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¡é††
-gsquid:CommentedOutCodeLineE"<This block of commented-out lines of code should be removed.(°Ä®šùÿÿÿÿ
-jsquid:S3776Û"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ŸŒ¹Ñ
-@squid:S1148Ê"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-asquid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(ê”ïk
-hsquid:CommentedOutCodeLineÏ"<This block of commented-out lines of code should be removed.(ã÷€ÿÿÿÿÿ
-V"squid:SwitchLastCaseIsDefaultCheck¢""Add a default case to this switch.(Ò“ÿšùÿÿÿÿ
-@squid:S1659,"$Declare "tvFrom" on a separate line.(˜åÁ°ùÿÿÿÿ
-_squid:S1192¦"GDefine a constant instead of duplicating this literal "tvFrom" 3 times.(ÌÙ®¹
-V"squid:SwitchLastCaseIsDefaultCheck’""Add a default case to this switch.(×“¾ñùÿÿÿÿ
-hsquid:CommentedOutCodeLine’"<This block of commented-out lines of code should be removed.(›¢¼Äüÿÿÿÿ
-rsquid:S14506"[Remove the "mSearchModel" field and declare it as a local variable in the relevant methods.(ó±Ş 
-Qsquid:S1854£"9Remove this useless assignment to local variable "mStr2".(—Öõ¶
-Lsquid:S1905®"/Remove this unnecessary cast to "DrawerLayout".(ĞÍè¨şÿÿÿÿ
-csquid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(ÿ—Ò¼
-bsquid:CommentedOutCodeLineÕ"<This block of commented-out lines of code should be removed.(ıÒ€/
-Lsquid:S1905ş"/Remove this unnecessary cast to "DrawerLayout".(ĞÍè¨şÿÿÿÿ
+Lsquid:S1905ÿ"/Remove this unnecessary cast to "DrawerLayout".(ĞÍè¨şÿÿÿÿ
+csquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³¿á•
+Qsquid:S1854¤"9Remove this useless assignment to local variable "mStr2".(—Öõ¶
+hsquid:CommentedOutCodeLineš"<This block of commented-out lines of code should be removed.(™ÕÃ¼şÿÿÿÿ
+Lsquid:S1905²"/Remove this unnecessary cast to "DrawerLayout".(ĞÍè¨şÿÿÿÿ
+hsquid:CommentedOutCodeLineŠ"<This block of commented-out lines of code should be removed.(å„ç„ÿÿÿÿÿ
+Vsquid:S1854£"9Remove this useless assignment to local variable "mStr1".(øšäüÿÿÿÿ
+nsquid:S00117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ÆÃ‹ùÿÿÿÿ
+hsquid:CommentedOutCodeLineĞ"<This block of commented-out lines of code should be removed.(ã÷€ÿÿÿÿÿ
+Esquid:S1659-")Declare "tvRoundTrip" on a separate line.(˜åÁ°ùÿÿÿÿ
+csquid:CommentedOutCodeLine¾"<This block of commented-out lines of code should be removed.(Á Ò
+V"squid:SwitchLastCaseIsDefaultCheck£""Add a default case to this switch.(Ò“ÿšùÿÿÿÿ
+asquid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(ê”ïk
+gsquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(°Ä®šùÿÿÿÿ
+hsquid:CommentedOutCodeLineØ"<This block of commented-out lines of code should be removed.(ª¿†—úÿÿÿÿ
+hsquid:CommentedOutCodeLine–"<This block of commented-out lines of code should be removed.(Ù÷ñùÿÿÿÿ
+V"squid:SwitchLastCaseIsDefaultCheck“""Add a default case to this switch.(×“¾ñùÿÿÿÿ
+>squid:S1659-""Declare "tvTo" on a separate line.(˜åÁ°ùÿÿÿÿ
+Ksquid:S1905L"/Remove this unnecessary cast to "DrawerLayout".(ĞÍè¨şÿÿÿÿ
+hsquid:S1301£"KReplace this "switch" statement by "if" statements to increase readability.(Ò“ÿšùÿÿÿÿ
+@squid:S1148Î"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+hsquid:CommentedOutCodeLine“"<This block of commented-out lines of code should be removed.(›¢¼Äüÿÿÿÿ
+bsquid:CommentedOutCodeLineÖ"<This block of commented-out lines of code should be removed.(ıÒ€/
+hsquid:CommentedOutCodeLine–"<This block of commented-out lines of code should be removed.(¯¬ÃÔøÿÿÿÿ
+rsquid:S14507"[Remove the "mSearchModel" field and declare it as a local variable in the relevant methods.(ó±Ş 
+gsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(É´½±ÿÿÿÿÿ
+Fsquid:S1659-"*Declare "tvReturnDate" on a separate line.(˜åÁ°ùÿÿÿÿ
+csquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(ÿ—Ò¼
+_squid:S1192§"GDefine a constant instead of duplicating this literal "tvFrom" 3 times.(ÌÙ®¹
+jsquid:S3776ß"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ŸŒ¹Ñ
+osquid:S1450,"XRemove the "btnSearch" field and declare it as a local variable in the relevant methods.(·×Â
+hsquid:CommentedOutCodeLine±"<This block of commented-out lines of code should be removed.(äŠ ¶şÿÿÿÿ
+jsquid:S3776’"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¡é††
+Fsquid:S1659-"*Declare "tvDepartDate" on a separate line.(˜åÁ°ùÿÿÿÿ
+osquid:ModifiersOrderCheck*"EReorder the modifiers to comply with the Java Language Specification.(”Æµ•ÿÿÿÿÿ
+@squid:S1659-"$Declare "tvFrom" on a separate line.(˜åÁ°ùÿÿÿÿ
+Msquid:S1905R"1Remove this unnecessary cast to "NavigationView".(üûÍøÿÿÿÿ
+Fsquid:S1905>"*Remove this unnecessary cast to "Toolbar".(ªü–ıÿÿÿÿ
+Bsquid:S16594"&Declare "mToModel" on a separate line.(É¬ô®úÿÿÿÿ

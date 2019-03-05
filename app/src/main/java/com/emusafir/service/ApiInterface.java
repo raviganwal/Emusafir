@@ -54,5 +54,9 @@ public interface ApiInterface {
     @POST("bookingseats")
     Call<ResponseBody> bookingseats(@Body RequestBody param);
 
+    @FormUrlEncoded
+    @POST("update_payment_status")
+    Call<ResponseBody> update_payment_status(@FieldMap HashMap<String, String> hm);
+
 
 }

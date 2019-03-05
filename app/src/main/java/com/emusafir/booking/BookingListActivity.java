@@ -15,6 +15,7 @@ import com.emusafir.service.ApiInterface;
 import com.emusafir.utility.App;
 import com.emusafir.utility.ConnectivityReceiver;
 import com.emusafir.utility.Utils;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -43,12 +44,13 @@ public class BookingListActivity extends AppCompatActivity {
     private TextView tvInfo;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private TextInputEditText etSearch;
+    private FloatingActionButton fabSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking_list);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -64,7 +66,8 @@ public class BookingListActivity extends AppCompatActivity {
         /*mRecyclerView.addItemDecoration(
                 new DividerItemDecoration(CityActivity.this, R.drawable.divider));*/
         mRecyclerView.setAdapter(mAdapter);
-        checkConnection();
+        if (App.getInstance().getPrefManager().isLoggedIn())
+            checkConnection();
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -75,22 +78,47 @@ public class BookingListActivity extends AppCompatActivity {
             }
         });
 
+
     }
 
     private void init() {
         mRecyclerView = findViewById(R.id.mRecyclerView);
+        fabSearch = findViewById(R.id.fabSearch);
+        fabSearch.setEnabled(false);
         etSearch = findViewById(R.id.etSearch);
         tvInfo = findViewById(R.id.tvInfo);
         mSwipeRefreshLayout = findViewById(R.id.mSwipeRefreshLayout);
         mSwipeRefreshLayout.setColorSchemeResources(R.color.colorAccent, R.color.colorAccentDark);
 
+        etSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
 
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (s.length() > 0)
+                    fabSearch.setEnabled(true);
+                else
+                    fabSearch.setEnabled(false);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+        fabSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkConnection();
+            }
+        });
     }
 
     public void checkConnection() {
         boolean isConnected = ConnectivityReceiver.isConnected();
         if (isConnected) {
-            if (App.getInstance().getPrefManager().isLoggedIn())
                 booking_list();
         } else
             Utils.showMessage(getString(R.string.not_connected_to_internet), BookingListActivity.this);
@@ -102,17 +130,12 @@ public class BookingListActivity extends AppCompatActivity {
         ApiInterface apiService =
                 ApiClient.getClient().create(ApiInterface.class);
         HashMap<String, String> params = new HashMap<>();
-//        pnr_no:15516759801
-//ticket_no:
-//mobile_no:9993269783
-//user_id:
         if (App.getInstance().getPrefManager().isLoggedIn())
             params.put("user_id", App.getInstance().getPrefManager().getUser().getId());
-        else {
-            params.put("pnr_no", etSearch.getText().toString().trim());
-            params.put("ticket_no", etSearch.getText().toString().trim());
-            params.put("mobile_no", etSearch.getText().toString().trim());
-        }
+        else
+            params.put("user_id", "");
+        if (etSearch.getText().toString().trim() != null)
+            params.put("search_key", etSearch.getText().toString().trim());
         apiService.booking_list(params).enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {

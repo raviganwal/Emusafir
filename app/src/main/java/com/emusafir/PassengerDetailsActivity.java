@@ -16,11 +16,12 @@ import android.widget.CheckBox;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.emusafir.model.CityModel;
+import com.emusafir.model.booking.PendingBookedModel;
 import com.emusafir.service.ApiClient;
 import com.emusafir.service.ApiInterface;
 import com.emusafir.userauth.LoginActivity;
 import com.emusafir.utility.App;
+import com.emusafir.utility.Constant;
 import com.emusafir.utility.MyProgressDialog;
 import com.emusafir.utility.Utils;
 import com.emusafir.utility.Validation;
@@ -29,15 +30,14 @@ import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.razorpay.Checkout;
 import com.razorpay.PaymentResultListener;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -72,6 +72,7 @@ public class PassengerDetailsActivity extends AppCompatActivity implements View.
     private AppCompatRadioButton rbInsuranceYes, rbInsuranceNo;
     private boolean isInsured;
     private MyProgressDialog mMyProgressDialog;
+    PendingBookedModel mPendingBookedModel;
 
     @Override
 
@@ -274,7 +275,11 @@ public class PassengerDetailsActivity extends AppCompatActivity implements View.
                             jsonObjectMain.put("insurance_agreement", 0);
 
                         }
-                        startPayment();
+                        jsonObjectMain.put("transaction_id", Constant.PENDING);
+                        jsonObjectMain.put("payment_mode", "razorpay");
+                        jsonObjectMain.put("payment_status", Constant.PENDING);
+                        bookingseats();
+
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -325,7 +330,7 @@ public class PassengerDetailsActivity extends AppCompatActivity implements View.
              *     Invoice Payment
              *     etc.
              */
-            options.put("description", "");
+            options.put("description", "Ticket No." + mPendingBookedModel.getTicketNo());
 
             options.put("currency", "INR");
 
@@ -343,30 +348,31 @@ public class PassengerDetailsActivity extends AppCompatActivity implements View.
 
     @Override
     public void onPaymentSuccess(String s) {
-        Log.e(TAG,"PAYMENT "+s);
-        try {
-            jsonObjectMain.put("transaction_id", s);
-            jsonObjectMain.put("payment_mode", "razorpay");
-            jsonObjectMain.put("payment_status", "success");
+        Log.e(TAG, "PAYMENT " + s);
+        update_payment_status(s, Constant.CONFIRM);
+//        try {
+//            jsonObjectMain.put("transaction_id", s);
+//            jsonObjectMain.put("payment_mode", "razorpay");
+//            jsonObjectMain.put("payment_status", "success");
+//
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
 
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        bookingseats();
     }
 
     @Override
     public void onPaymentError(int i, String s) {
+        update_payment_status(s, Constant.FAILED);
+//        try {
+//            jsonObjectMain.put("transaction_id", "");
+//            jsonObjectMain.put("payment_mode", "razorpay");
+//            jsonObjectMain.put("payment_status", "failed");
+//
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
 
-        try {
-            jsonObjectMain.put("transaction_id", "");
-            jsonObjectMain.put("payment_mode", "razorpay");
-            jsonObjectMain.put("payment_status", "failed");
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        bookingseats();
     }
 
     public void bookingseats() {
@@ -386,6 +392,76 @@ public class PassengerDetailsActivity extends AppCompatActivity implements View.
 
                 try {
                     String respo = response.body().string();
+                    if (response.code() == 200) {
+                        JSONObject jsonObject = new JSONObject(respo);
+                        mPendingBookedModel = new Gson().fromJson(jsonObject.getJSONObject("result").toString(), PendingBookedModel.class);
+                        startPayment();
+//                        goToMainActivity();
+                    } else {
+                        switch (response.code()) {
+                            case 500:
+                                Utils.showMessage("Internal Server Error", PassengerDetailsActivity.this);
+                                break;
+                            default:
+                                JSONObject jsonObject = new JSONObject(response.errorBody().string());
+                                if (jsonObject.has("message")) {
+                                    Utils.showMessage(jsonObject.getString("message"), PassengerDetailsActivity.this);
+                                }
+                                break;
+                        }
+                    }
+//                    else {
+//                        tvInfo.setVisibility(View.VISIBLE);
+//                        if (object.has("msg"))
+//                            tvInfo.setText(object.getString("msg"));
+//                    }tvFrom
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+                if (mMyProgressDialog.isShowing())
+                    mMyProgressDialog.dismiss();
+
+                t.printStackTrace();
+
+            }
+        });
+    }
+
+    public void update_payment_status(String transaction_id, String payment_status) {
+        mMyProgressDialog.show();
+//        mMyProgressDialog.setCancelable(false);
+        ApiInterface apiService =
+                ApiClient.getClient().create(ApiInterface.class);
+//        ticket_no:2661120
+//        payment_mode:aaa
+//        transaction_id:3545768
+//        payment_status:2
+
+        Log.e(TAG, "ticket_no " + mPendingBookedModel.getTicketNo());
+        Log.e(TAG, "payment_mode " + mPendingBookedModel.getPaymentMode());
+        Log.e(TAG, "transaction_id " + transaction_id);
+        Log.e(TAG, "payment_status " + payment_status);
+
+        HashMap<String, String> params = new HashMap<>();
+        params.put("ticket_no",mPendingBookedModel.getTicketNo());
+        params.put("payment_mode",mPendingBookedModel.getPaymentMode());
+        params.put("transaction_id",transaction_id);
+        params.put("payment_status",payment_status);
+
+        apiService.update_payment_status(params).enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                if (mMyProgressDialog.isShowing())
+                    mMyProgressDialog.dismiss();
+
+                try {
+                    String respo = response.body().string();
+                    Log.e(TAG, "respo " + respo);
+
                     if (response.code() == 200) {
                         goToMainActivity();
                     } else {

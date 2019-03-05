@@ -15,6 +15,7 @@ import com.emusafir.utility.Utils;
 import java.util.List;
 
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyViewHolder> {
@@ -71,12 +72,16 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyViewHo
             holder.tvPayment.setText(mContext.getResources().getString(R.string.rupee) + model.getFinalTotalPrice());
         if (model.getPaymentStatus() != null) {
             if (model.getPaymentStatus().equals(Constant.FAILED)) {
+                holder.tvPaymentStatus.setTextColor(ContextCompat.getColor(mContext, R.color.colorRed));
                 holder.tvPaymentStatus.setText("Failed");
             } else if (model.getPaymentStatus().equals(Constant.CONFIRM)) {
+                holder.tvPaymentStatus.setTextColor(ContextCompat.getColor(mContext, R.color.colorGreen));
                 holder.tvPaymentStatus.setText("Booked");
             } else if (model.getPaymentStatus().equals(Constant.PENDING)) {
+                holder.tvPaymentStatus.setTextColor(ContextCompat.getColor(mContext, R.color.colorYellow));
                 holder.tvPaymentStatus.setText("Transaction Pending");
             } else if (model.getPaymentStatus().equals(Constant.CANCEL)) {
+                holder.tvPaymentStatus.setTextColor(ContextCompat.getColor(mContext, R.color.colorHint));
                 holder.tvPaymentStatus.setText("Cancelled");
             }
 

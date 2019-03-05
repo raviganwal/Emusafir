@@ -1,16 +1,17 @@
 
-Rsquid:S2696'"6Make the enclosing method "static" or remove this set.(û€Ì›ùÿÿÿÿ
-bsquid:CommentedOutCodeLine
-"<This block of commented-out lines of code should be removed.(‡åô–
-bsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(ÖÀ¨×
 gsquid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(­žøïùÿÿÿÿ
+bsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(ÖÀ¨×
+bsquid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(¼Á˜Ù
+bsquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(ó«ïõ
+bsquid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(¡Ý²Ü
 bsquid:CommentedOutCodeLine["<This block of commented-out lines of code should be removed.(žÏå
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(’Š‹—
+bsquid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(¾ºøÉ
+Rsquid:S2696'"6Make the enclosing method "static" or remove this set.(û€Ì›ùÿÿÿÿ
 gsquid:CommentedOutCodeLineT"<This block of commented-out lines of code should be removed.(’ŒÛ¥ûÿÿÿÿ
 hsquid:S18711"LThis branch's code block is the same as the block for the branch on line 47.(‰—Ç‹øÿÿÿÿ
-bsquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(ó«ïõ
-lsquid:UselessImportCheck"<Remove this unused import 'com.google.firebase.FirebaseApp'.(å·¢Çøÿÿÿÿ8¾÷ß”“-
-bsquid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(¼Á˜Ù
-bsquid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(¡Ý²Ü
+bsquid:CommentedOutCodeLine
+"<This block of commented-out lines of code should be removed.(‡åô–
 bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¨µñ·
-bsquid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(¾ºøÉ
+lsquid:UselessImportCheck"<Remove this unused import 'com.google.firebase.FirebaseApp'.(å·¢Çøÿÿÿÿ8¾÷ß”“-
+Tsquid:S2696b"6Make the enclosing method "static" or remove this set.(îƒ¢ò8·°ÿ»”-
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(’Š‹—

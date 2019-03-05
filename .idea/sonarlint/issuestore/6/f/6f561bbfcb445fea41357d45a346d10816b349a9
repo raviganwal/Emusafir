@@ -1,41 +1,41 @@
 
-csquid:CommentedOutCodeLineü"<This block of commented-out lines of code should be removed.(¬å’º
-Usquid:S1854a"9Remove this useless assignment to local variable "color".(·†´Æúÿÿÿÿ
-csquid:CommentedOutCodeLineÅ"<This block of commented-out lines of code should be removed.(àí«ù
-hsquid:CommentedOutCodeLineç"<This block of commented-out lines of code should be removed.(õ×¾Íøÿÿÿÿ
-hsquid:CommentedOutCodeLine¥"<This block of commented-out lines of code should be removed.(ƒÆŒ¥üÿÿÿÿ
-csquid:CommentedOutCodeLine±"<This block of commented-out lines of code should be removed.(àí«ù
-csquid:CommentedOutCodeLine‰"<This block of commented-out lines of code should be removed.(àí«ù
-hsquid:CommentedOutCodeLineš"<This block of commented-out lines of code should be removed.(¬š»°ÿÿÿÿÿ
-hsquid:CommentedOutCodeLineª"<This block of commented-out lines of code should be removed.(¬š»°ÿÿÿÿÿ
-Fsquid:S1185N"(Remove this method to simply inherit it.(Ù«µ§8ÜÃ°”“-
-Wsquid:S1854`";Remove this useless assignment to local variable "message".(¯µÄðýÿÿÿÿ
-Vsquid:S1854•"9Remove this useless assignment to local variable "color".(æŸùÿÿÿÿ
+csquid:CommentedOutCodeLine‚"<This block of commented-out lines of code should be removed.(àí«ù
+csquid:CommentedOutCodeLineë"<This block of commented-out lines of code should be removed.(©Ä—É
+jsquid:CommentedOutCodeLineŠ"<This block of commented-out lines of code should be removed.(ì†æ¹8³½Üö’-
+csquid:CommentedOutCodeLineØ"<This block of commented-out lines of code should be removed.(Ä‰üÎ
+hsquid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(ÿåáÉþÿÿÿÿ
 hsquid:CommentedOutCodeLineõ"<This block of commented-out lines of code should be removed.(ëÿÔêüÿÿÿÿ
-csquid:CommentedOutCodeLineª"<This block of commented-out lines of code should be removed.(¬å’º
-gsquid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éëÛÿÿÿÿÿ
 gsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(¶Ÿêáøÿÿÿÿ
 csquid:CommentedOutCodeLineÀ"<This block of commented-out lines of code should be removed.(Ñ™•Ï
-csquid:CommentedOutCodeLine§"<This block of commented-out lines of code should be removed.(¬å’º
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éëÛÿÿÿÿÿ
-hsquid:CommentedOutCodeLine£"<This block of commented-out lines of code should be removed.(˜²í¥þÿÿÿÿ
-jsquid:CommentedOutCodeLineŠ"<This block of commented-out lines of code should be removed.(ì†æ¹8³½Üö’-
-csquid:CommentedOutCodeLineÜ"<This block of commented-out lines of code should be removed.(“ƒ¨
-csquid:CommentedOutCodeLine‚"<This block of commented-out lines of code should be removed.(àí«ù
+Ysquid:S1068#"BRemove this unused "mRegistrationBroadcastReceiver" private field.(–Êþ‘
+Wsquid:S1854`";Remove this useless assignment to local variable "message".(¯µÄðýÿÿÿÿ
+csquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(àí«ù
 csquid:CommentedOutCodeLine¥"<This block of commented-out lines of code should be removed.(§ýÅÖ
 ?squid:S1148C"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-gsquid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(„êç·þÿÿÿÿ
-hsquid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(ÿåáÉþÿÿÿÿ
-csquid:CommentedOutCodeLineë"<This block of commented-out lines of code should be removed.(©Ä—É
-csquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(àí«ù
+csquid:CommentedOutCodeLineª"<This block of commented-out lines of code should be removed.(¬å’º
+csquid:CommentedOutCodeLine±"<This block of commented-out lines of code should be removed.(àí«ù
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ðÔ¤àúÿÿÿÿ
+hsquid:CommentedOutCodeLineš"<This block of commented-out lines of code should be removed.(¬š»°ÿÿÿÿÿ
+csquid:CommentedOutCodeLineÑ"<This block of commented-out lines of code should be removed.(àí«ù
+gsquid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+Fsquid:S1185N"(Remove this method to simply inherit it.(Ù«µ§8ÜÃ°”“-
+csquid:CommentedOutCodeLineÜ"<This block of commented-out lines of code should be removed.(“ƒ¨
+Fsquid:S1481^"*Remove this unused "color" local variable.(‘¬÷ûüÿÿÿÿ
+hsquid:CommentedOutCodeLineä"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
 csquid:CommentedOutCodeLine¬"<This block of commented-out lines of code should be removed.(Ñ™•Ï
-csquid:CommentedOutCodeLineØ"<This block of commented-out lines of code should be removed.(Ä‰üÎ
+csquid:CommentedOutCodeLineÅ"<This block of commented-out lines of code should be removed.(àí«ù
+csquid:CommentedOutCodeLine§"<This block of commented-out lines of code should be removed.(¬å’º
+Usquid:S1854a"9Remove this useless assignment to local variable "color".(·†´Æúÿÿÿÿ
 hsquid:CommentedOutCodeLineá"<This block of commented-out lines of code should be removed.(¬š»°ÿÿÿÿÿ
 gsquid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(½¶š•øÿÿÿÿ
-hsquid:CommentedOutCodeLineä"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-Fsquid:S1481^"*Remove this unused "color" local variable.(‘¬÷ûüÿÿÿÿ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ðÔ¤àúÿÿÿÿ
-Ysquid:S1068#"BRemove this unused "mRegistrationBroadcastReceiver" private field.(–Êþ‘
-csquid:CommentedOutCodeLineÑ"<This block of commented-out lines of code should be removed.(àí«ù
-hsquid:CommentedOutCodeLine•"<This block of commented-out lines of code should be removed.(Û´æîþÿÿÿÿ
+hsquid:CommentedOutCodeLineª"<This block of commented-out lines of code should be removed.(¬š»°ÿÿÿÿÿ
 ]squid:S2142B"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+hsquid:CommentedOutCodeLine¥"<This block of commented-out lines of code should be removed.(ƒÆŒ¥üÿÿÿÿ
+gsquid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(„êç·þÿÿÿÿ
+hsquid:CommentedOutCodeLineç"<This block of commented-out lines of code should be removed.(õ×¾Íøÿÿÿÿ
+csquid:CommentedOutCodeLine‰"<This block of commented-out lines of code should be removed.(àí«ù
+hsquid:CommentedOutCodeLine•"<This block of commented-out lines of code should be removed.(Û´æîþÿÿÿÿ
+hsquid:CommentedOutCodeLine£"<This block of commented-out lines of code should be removed.(˜²í¥þÿÿÿÿ
+csquid:CommentedOutCodeLineü"<This block of commented-out lines of code should be removed.(¬å’º
+Vsquid:S1854•"9Remove this useless assignment to local variable "color".(æŸùÿÿÿÿ

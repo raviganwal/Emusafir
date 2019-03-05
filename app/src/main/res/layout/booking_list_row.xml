@@ -75,11 +75,19 @@
                         android:textSize="@dimen/textSize12" />
                 </LinearLayout>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin1px"
+                    android:layout_marginTop="@dimen/margin4"
+                    android:layout_marginBottom="@dimen/margin4"
+                    android:background="@color/colorHint" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat_regular"
                     android:text="PNR NO"
+
                     android:textColor="@color/colorSecondaryText"
                     android:textSize="@dimen/textSize12" />
 
@@ -92,6 +100,12 @@
                     android:text="15513410111"
                     android:textColor="@color/colorPrimaryText"
                     android:textSize="@dimen/textSize14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin1px"
+                    android:layout_marginTop="@dimen/margin4"
+                    android:background="@color/colorHint" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -112,6 +126,12 @@
                     android:textColor="@color/colorPrimaryText"
                     android:textSize="@dimen/textSize14" />
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin1px"
+                    android:layout_marginTop="@dimen/margin4"
+                    android:background="@color/colorHint" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -125,7 +145,7 @@
                         android:fontFamily="@font/muli_bold"
                         android:text="INR 100"
                         android:textColor="@color/colorPrimaryText"
-                        android:textSize="@dimen/textSize12" />
+                        android:textSize="@dimen/textSize14" />
 
                     <TextView
                         android:id="@+id/tvPaymentStatus"
@@ -137,7 +157,19 @@
                         android:paddingRight="@dimen/margin8"
                         android:text="Payment Failed"
                         android:textColor="@color/colorRed"
-                        android:textSize="@dimen/textSize10" />
+                        android:textSize="@dimen/textSize12" />
+
+                    <TextView
+                        android:id="@+id/tvDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli_bold"
+                        android:paddingLeft="@dimen/margin8"
+                        android:paddingTop="@dimen/margin4"
+                        android:paddingRight="@dimen/margin8"
+                        android:text="Tap here to see details"
+                        android:textColor="@color/colorAccentDark"
+                        android:textSize="@dimen/textSize12" />
 
                 </LinearLayout>
 

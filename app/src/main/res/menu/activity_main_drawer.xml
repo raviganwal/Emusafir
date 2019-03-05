@@ -7,7 +7,6 @@
 
         <item
             android:id="@+id/navHome"
-            android:icon="@drawable/ic_menu_camera"
             android:title="Home" />
         <item
             android:id="@+id/navBooking"
@@ -16,19 +15,15 @@
 
         <item
             android:id="@+id/navAboutus"
-            android:icon="@drawable/ic_menu_gallery"
             android:title="About Us" />
         <item
             android:id="@+id/navGallery"
-            android:icon="@drawable/ic_menu_gallery"
             android:title="Gallery" />
         <item
             android:id="@+id/navCustomerSupport"
-            android:icon="@drawable/ic_menu_manage"
             android:title="Customer support" />
         <item
             android:id="@+id/navContactUs"
-            android:icon="@drawable/ic_menu_manage"
             android:title="Contact" />
         <item
             android:id="@+id/navLogout"

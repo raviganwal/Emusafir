@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorFDTr"
+    android:background="@drawable/bg"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".CityActivity"
     tools:showIn="@layout/activity_booking_list">
@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerInParent="true"
-                android:layout_toLeftOf="@+id/fab"
+                android:layout_toLeftOf="@+id/fabSearch"
                 android:background="@null"
                 android:digits="0123456789"
                 android:fontFamily="@font/muli_regular"
@@ -38,7 +38,7 @@
                 android:textSize="@dimen/textSize14" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab"
+                android:id="@+id/fabSearch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
