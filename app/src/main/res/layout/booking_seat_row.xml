@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/margin10"
+    android:gravity="center"
+    android:paddingBottom="@dimen/margin10"
+    android:weightSum="4">
+
+    <ImageView
+        android:id="@+id/ivSeat"
+
+android:layout_marginLeft="@dimen/margin8"        android:layout_width="@dimen/margin20"
+        android:layout_height="@dimen/margin24"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/textSize14"
+        app:srcCompat="@drawable/ic_seater_booked_by_male" />
+
+    <TextView
+        android:id="@+id/tvSeatNo"
+        android:layout_width="@dimen/margin0"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/margin10"
+        android:text="SL24"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/textSize14" />
+
+    <TextView
+        android:id="@+id/tvSeatType"
+        android:layout_width="@dimen/margin0"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/margin10"
+        android:text="USL"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/textSize14" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="@dimen/margin0"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/margin4"
+        android:text="M"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/textSize14" />
+
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="@dimen/margin0"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:fontFamily="@font/muli_semibold"
+        android:layout_marginRight="@dimen/margin8"
+        android:gravity="center|right"
+        android:text="100"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/textSize14" />
+
+</LinearLayout>

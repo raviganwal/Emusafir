@@ -99,22 +99,21 @@ public class BoardingDroppingActivity extends AppCompatActivity implements Notif
 
     @Override
     public void notifyPointLayout(PointModel model, boolean isBoarding) {
+        Log.e(TAG, "notifyPointLayout " + model.getId() + " " + model.getName() + " " + isBoarding);
         if (isBoarding) {
             mBoardingPoint = model.getId();
-
             if (App.getInstance().getPrefManager().getOneWayOrRoundTripOnProgress().equalsIgnoreCase(Constant.ONE_WAY)) {
                 App.getInstance().getPrefManager().setOneWayBoardingPoint(mBoardingPoint);
             } else if (App.getInstance().getPrefManager().getOneWayOrRoundTripOnProgress().equalsIgnoreCase(Constant.ROUND_TRIP)) {
                 App.getInstance().getPrefManager().setRoundTripBoardingPoint(mBoardingPoint);
             }
-
             tabLayout.getTabAt(1).select();
         } else {
             mDroppingPoint = model.getId();
 //            tabLayout.getTabAt(0).select();
-            if (App.getInstance().getPrefManager().getOneWayOrRoundTripOnProgress().equalsIgnoreCase(Constant.ROUND_TRIP)) {
+            if (App.getInstance().getPrefManager().getOneWayOrRoundTripOnProgress().equalsIgnoreCase(Constant.ONE_WAY)) {
                 App.getInstance().getPrefManager().setOneWayDroppingPoint(mDroppingPoint);
-            } else {
+            } else if (App.getInstance().getPrefManager().getOneWayOrRoundTripOnProgress().equalsIgnoreCase(Constant.ROUND_TRIP)) {
                 App.getInstance().getPrefManager().setRoundTripDroppingPoint(mDroppingPoint);
             }
             if (App.getInstance().getPrefManager().getSearch().getTripType().equalsIgnoreCase(Constant.ROUND_TRIP)) {
@@ -127,7 +126,7 @@ public class BoardingDroppingActivity extends AppCompatActivity implements Notif
                 } else if (App.getInstance().getPrefManager().getOneWayOrRoundTripOnProgress().equalsIgnoreCase(Constant.ROUND_TRIP)) {
 
                     saveRoundTripArray();
-                    Log.e(TAG, "FINAL ARRAY ROUND_TRIP" + App.getInstance().getPrefManager().getOneWayBookingArray() + " \n\n\n\n" + App.getInstance().getPrefManager().getRoundTripBookingArray());
+                    Log.e(TAG, "FINAL ARRAY ROUND_TRIP" + App.getInstance().getPrefManager().getOneWayBookingArray() + App.getInstance().getPrefManager().getRoundTripBookingArray());
                     Intent intent = new Intent(BoardingDroppingActivity.this, PassengerDetailsActivity.class);
 //                intent.putExtra("mySeatArray", mySeatArray);
                     startActivity(intent);

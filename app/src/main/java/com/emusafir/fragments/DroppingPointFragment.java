@@ -2,6 +2,7 @@ package com.emusafir.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +25,7 @@ import androidx.viewpager.widget.ViewPager;
 
 public class DroppingPointFragment extends Fragment implements OnPointSelected {
 
-    private final String TAG = BoardingPointFragment.class.getSimpleName();
+    private final String TAG = DroppingPointFragment.class.getSimpleName();
     private ViewPager mViewPager;
     private DroppingPointAdapter mAdapter;
     private RecyclerView mRecyclerView;
@@ -49,6 +50,9 @@ public class DroppingPointFragment extends Fragment implements OnPointSelected {
 
         View view = inflater.inflate(R.layout.fragment_dropping_point, container, false);
         ArrayList<PointModel> mList = (ArrayList<PointModel>) getArguments().getSerializable("mBusLayoutModel");
+        for (int i = 0; i < mList.size(); i++) {
+            Log.e(TAG, "DROP "+mList.get(i).getId() + " " + mList.get(i).getName());
+        }
 
         mRecyclerView = view.findViewById(R.id.mRecyclerView);
 
@@ -74,6 +78,7 @@ public class DroppingPointFragment extends Fragment implements OnPointSelected {
 
     @Override
     public void onPointSelected(PointModel point, final boolean isBoarding) {
+        Log.e(TAG,point.getId()+" "+point.getName()+" "+isBoarding);
         mNotifyPointLayout.notifyPointLayout(point, isBoarding);
     }
 

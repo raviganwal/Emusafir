@@ -1,11 +1,16 @@
 
 package com.emusafir.model.booking;
 
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.ObjectStreamException;
+import java.io.Serializable;
 import java.util.List;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class BookingModel {
+public class BookingModel implements Serializable {
 
     @SerializedName("Id")
     @Expose
@@ -97,6 +102,9 @@ public class BookingModel {
     @SerializedName("DepartureTime")
     @Expose
     private String departureTime;
+    @SerializedName("ArrivalTime")
+    @Expose
+    private String arrivalTime;
     @SerializedName("details")
     @Expose
     private List<Detail> details = null;
@@ -337,6 +345,14 @@ public class BookingModel {
         return departureTime;
     }
 
+    public String getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public void setArrivalTime(String arrivalTime) {
+        this.arrivalTime = arrivalTime;
+    }
+
     public void setDepartureTime(String departureTime) {
         this.departureTime = departureTime;
     }
@@ -347,6 +363,16 @@ public class BookingModel {
 
     public void setDetails(List<Detail> details) {
         this.details = details;
+    }
+
+    private void writeObject(ObjectOutputStream out)
+            throws IOException {
+        out.writeUTF(pNRNo);
+    }
+
+    private void readObject(java.io.ObjectInputStream in)
+            throws IOException, ClassNotFoundException {
+        pNRNo = in.readUTF();
     }
 
 }

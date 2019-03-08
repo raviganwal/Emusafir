@@ -81,10 +81,6 @@ T
 $app/src/main/res/drawable/border.xml,9\2\927357214e239a307ed0db06d4605b263a4fd674
 c
 3app/src/main/res/drawable/ic_receipt_black_24dp.xml,9\5\9543ec4d3f7540de69f37deedd0e649ac3d6cfb3
-f
-6app/src/main/res/drawable/ic_sleeper_booked_by_man.xml,9\5\95e65b86763eaed194ab1cfbc4f859c660bbb371
-h
-8app/src/main/res/drawable/ic_sleeper_booked_by_woman.xml,7\c\7c086570959d7e5a0baeb7e5500677b0099e8aff
 a
 1app/src/main/res/drawable/ic_sleeper_selected.xml,3\3\331c4073215c9f78e2a0ada6e8c338596055a910
 X
@@ -114,3 +110,9 @@ c
 .app/src/main/res/menu/activity_main_drawer.xml,a\8\a874acbd348e069027d5c3df7eceb1a0bba28be9
 `
 0app/src/main/res/layout/content_booking_list.xml,5\4\5495cb0eb4f18a157babdfee57d363e1bdba5110
+k
+;app/src/main/java/com/emusafir/utility/PermissionUtils.java,a\a\aacfedbd3a73959bb2e0200dce41e615e4cb2ab1
+r
+Bapp/src/main/java/com/emusafir/booking/BookingDetailsActivity.java,0\f\0fb1e034272da94604dcdd5fa18c5bb1765886be
+n
+>app/src/main/java/com/emusafir/adapter/BookingSeatAdapter.java,3\3\33b74933b42aa5404ad1354e505ff36e2117fac2

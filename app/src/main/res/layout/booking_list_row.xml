@@ -24,11 +24,11 @@
                 android:id="@+id/tvDateOfBooking"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@color/colorF8"
+                android:background="@color/colorAccent"
                 android:fontFamily="@font/muli_bold"
                 android:gravity="center|bottom"
                 android:text="18 Mar"
-                android:textColor="@color/colorAccentDark"
+                android:textColor="@color/colorWhite"
                 android:textSize="@dimen/textSize12" />
 
             <LinearLayout
@@ -136,7 +136,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingTop="@dimen/margin4">
+                    android:paddingTop="@dimen/margin4"
+                    android:gravity="center|left"
+                    android:paddingBottom="@dimen/margin4">
 
                     <TextView
                         android:id="@+id/tvPayment"
@@ -153,7 +155,6 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/muli_bold"
                         android:paddingLeft="@dimen/margin8"
-                        android:paddingTop="@dimen/margin4"
                         android:paddingRight="@dimen/margin8"
                         android:text="Payment Failed"
                         android:textColor="@color/colorRed"
@@ -163,12 +164,15 @@
                         android:id="@+id/tvDetails"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/muli_bold"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:background="@drawable/btn_primary"
+                        android:fontFamily="@font/montserrat_regular"
                         android:paddingLeft="@dimen/margin8"
-                        android:paddingTop="@dimen/margin4"
                         android:paddingRight="@dimen/margin8"
-                        android:text="Tap here to see details"
-                        android:textColor="@color/colorAccentDark"
+                        android:paddingTop="@dimen/margin4"
+                        android:paddingBottom="@dimen/margin4"
+                        android:text="Cancel Ticket"
+                        android:textColor="@color/colorWhite"
                         android:textSize="@dimen/textSize12" />
 
                 </LinearLayout>

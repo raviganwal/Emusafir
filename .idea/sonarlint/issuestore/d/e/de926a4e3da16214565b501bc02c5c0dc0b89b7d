@@ -1,17 +1,16 @@
 
-Jsquid:S1659"'Declare "tvPayment" on a separate line.(ÍìÏûÿÿÿÿ8ŞòÜÂ”-
-Psquid:S1659"-Declare "tvPaymentStatus" on a separate line.(ÍìÏûÿÿÿÿ8ØÍúÄ”-
-Esquid:S1659""Declare "tvTo" on a separate line.(ÍìÏûÿÿÿÿ8ÚÂ”-
-•"squid:ClassVariableVisibilityCheck"[Make tvPaymentStatus a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8ØÍúÄ”-
-Qsquid:S1068"3Remove this unused "mOnCitySelected" private field.(ê÷ş”8úŸâÂ”-
-Ÿsquid:S1186W"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¡é††8úŸâÂ”-
-"squid:ClassVariableVisibilityCheck"UMake mCardView a static final constant or non-public and provide accessors if needed.(ÃÔ†ùÿÿÿÿ8†¤ãÂ”-
-Fsquid:S1659"#Declare "tvPnr" on a separate line.(ÍìÏûÿÿÿÿ8ÏùÛÂ”-
-•"squid:ClassVariableVisibilityCheck"[Make tvDateOfBooking a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8¦±İÂ”-
-"squid:ClassVariableVisibilityCheck"UMake tvPayment a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8ŞòÜÂ”-
-Š"squid:ClassVariableVisibilityCheck"PMake tvTo a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8ÚÂ”-
-Psquid:S1659"-Declare "tvDateOfJourney" on a separate line.(ÍìÏûÿÿÿÿ8Ÿ¸ÜÂ”-
-‹"squid:ClassVariableVisibilityCheck"QMake tvPnr a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8ÏùÛÂ”-
-•"squid:ClassVariableVisibilityCheck"[Make tvDateOfJourney a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8Ÿ¸ÜÂ”-
-Œ"squid:ClassVariableVisibilityCheck"RMake tvFrom a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8µåÙÂ”-
-Psquid:S1659"-Declare "tvDateOfBooking" on a separate line.(ÍìÏûÿÿÿÿ8¦±İÂ”-
+Psquid:S1659"-Declare "tvPaymentStatus" on a separate line.(ÍìÏûÿÿÿÿ8¦±İÂ”-
+"squid:ClassVariableVisibilityCheck"UMake mCardView a static final constant or non-public and provide accessors if needed.(ÃÔ†ùÿÿÿÿ8†¤ãÂ”-
+Psquid:S1659"-Declare "tvDateOfJourney" on a separate line.(ÍìÏûÿÿÿÿ8ÚÂ”-
+Qsquid:S1068"3Remove this unused "mOnCitySelected" private field.(ê÷ş”8úŸâÂ”-
+•"squid:ClassVariableVisibilityCheck"[Make tvPaymentStatus a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8µåÙÂ”-
+‹"squid:ClassVariableVisibilityCheck"QMake tvPnr a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8ŞòÜÂ”-
+Jsquid:S1659"'Declare "tvPayment" on a separate line.(ÍìÏûÿÿÿÿ8ÏùÛÂ”-
+Psquid:S1659"-Declare "tvDateOfBooking" on a separate line.(ÍìÏûÿÿÿÿ8Ÿ¸ÜÂ”-
+Œ"squid:ClassVariableVisibilityCheck"RMake tvFrom a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8ØÍúÄ”-
+"squid:ClassVariableVisibilityCheck"UMake tvPayment a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8ÏùÛÂ”-
+Fsquid:S1659"#Declare "tvPnr" on a separate line.(ÍìÏûÿÿÿÿ8ØÍúÄ”-
+Esquid:S1659""Declare "tvTo" on a separate line.(ÍìÏûÿÿÿÿ8ŞòÜÂ”-
+Š"squid:ClassVariableVisibilityCheck"PMake tvTo a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8¦±İÂ”-
+•"squid:ClassVariableVisibilityCheck"[Make tvDateOfJourney a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8ÚÂ”-
+•"squid:ClassVariableVisibilityCheck"[Make tvDateOfBooking a static final constant or non-public and provide accessors if needed.(ÍìÏûÿÿÿÿ8Ÿ¸ÜÂ”-

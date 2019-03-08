@@ -1,443 +1,647 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mSwipeRefreshLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorFDTr"
-    android:orientation="vertical"
+    android:visibility="visible"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".CityActivity"
     tools:showIn="@layout/activity_booking_details">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_regular"
-        android:gravity="center"
-        android:padding="@dimen/margin10"
-        android:text="Gourav Travels\nRegistration Number - MP09SC4585"
-        android:textColor="@color/colorPrimaryText"
-        android:textSize="@dimen/textSize12" />
-
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="@dimen/activity_vertical_margin">
+        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/tvInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin4"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="Journey Details"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_cloud_off_black_24dp"
+                android:drawablePadding="@dimen/margin10"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
                 android:textColor="@color/colorHint"
-                android:textSize="@dimen/textSize14" />
+                android:textSize="@dimen/textSize14"
+                android:visibility="invisible" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/border"
-                android:orientation="vertical"
-                android:padding="@dimen/margin8">
-
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/ticket"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFDTr"
+                    android:orientation="vertical">
+
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tvBusName"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:paddingTop="@dimen/margin4"
-                        android:paddingBottom="@dimen/margin4"
-                        android:text="Indore"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center"
+                        android:padding="@dimen/margin10"
                         android:textColor="@color/colorPrimaryText"
-                        android:textSize="@dimen/textSize12" />
+                        android:textSize="@dimen/textSize14" />
 
-                    <TextView
-                        android:id="@+id/tvDepartureTime"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:drawableRight="@drawable/ic_trending_flat_black_24dp"
-                        android:fontFamily="@font/muli_semibold"
-                        android:paddingLeft="@dimen/margin4"
-                        android:paddingRight="@dimen/margin4"
-                        android:textColor="@color/colorPrimaryText" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:paddingTop="@dimen/margin4"
-                        android:paddingBottom="@dimen/margin4"
-                        android:text="Jaora"
-                        android:textColor="@color/colorPrimaryText"
-                        android:textSize="@dimen/textSize12" />
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin8">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin4"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="Journey Details"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/textSize12" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/margin2"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin8">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvFrom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:paddingTop="@dimen/margin4"
+                                        android:paddingBottom="@dimen/margin4"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:drawableRight="@drawable/ic_trending_flat_black_24dp"
+                                        android:fontFamily="@font/muli_semibold"
+                                        android:paddingLeft="@dimen/margin4"
+                                        android:paddingRight="@dimen/margin4"
+                                        android:textColor="@color/colorPrimaryText" />
+
+                                    <TextView
+                                        android:id="@+id/tvTo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:paddingTop="@dimen/margin4"
+                                        android:paddingBottom="@dimen/margin4"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:paddingTop="@dimen/margin4"
+                                    android:text="PNR NO"
+                                    android:textColor="@color/colorSecondaryText"
+                                    android:textSize="@dimen/textSize12" />
+
+                                <TextView
+                                    android:id="@+id/tvPnrNo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/muli_bold"
+                                    android:paddingTop="@dimen/margin2"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="@dimen/textSize16" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:paddingTop="@dimen/margin4"
+                                    android:text="Date of Journey"
+                                    android:textColor="@color/colorSecondaryText"
+                                    android:textSize="@dimen/textSize12" />
+
+                                <TextView
+                                    android:id="@+id/tvDateOfJourney"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:paddingTop="@dimen/margin2"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="@dimen/textSize16" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:paddingTop="@dimen/margin4"
+                                    android:text="Date of Booking"
+                                    android:textColor="@color/colorSecondaryText"
+                                    android:textSize="@dimen/textSize12" />
+
+                                <TextView
+                                    android:id="@+id/tvDateOfBooking"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:paddingTop="@dimen/margin2"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="@dimen/textSize16" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:paddingTop="@dimen/margin4"
+                                    android:text="Boarding Point"
+                                    android:textColor="@color/colorSecondaryText"
+                                    android:textSize="@dimen/textSize12" />
+
+                                <TextView
+                                    android:id="@+id/tvBoardingPoint"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:paddingTop="@dimen/margin2"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="@dimen/textSize16" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:paddingTop="@dimen/margin4"
+                                    android:text="Dropping Point"
+                                    android:textColor="@color/colorSecondaryText"
+                                    android:textSize="@dimen/textSize12" />
+
+                                <TextView
+                                    android:id="@+id/tvDroppingPoint"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:paddingTop="@dimen/margin2"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="@dimen/textSize16" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:paddingTop="@dimen/margin4"
+                                    android:text="Arrival and Departure Time"
+                                    android:textColor="@color/colorSecondaryText"
+                                    android:textSize="@dimen/textSize12" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:paddingTop="@dimen/margin2"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tvDepartureTime"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:drawableRight="@drawable/ic_trending_flat_black_24dp"
+                                        android:drawablePadding="@dimen/margin2"
+                                        android:fontFamily="@font/muli_semibold"
+                                        android:paddingTop="@dimen/margin4"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+
+                                    <TextView
+                                        android:id="@+id/tvArrivalTime"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@+id/tvDepartureTime"
+                                        android:fontFamily="@font/muli_semibold"
+                                        android:paddingLeft="@dimen/margin2"
+                                        android:paddingTop="@dimen/margin4"
+                                        android:paddingRight="@dimen/margin2"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            app:cardCornerRadius="@dimen/margin2"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorAccentLight"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="@dimen/margin8"
+                                    android:paddingTop="@dimen/margin8"
+                                    android:paddingRight="@dimen/margin8"
+                                    android:paddingBottom="@dimen/margin8"
+                                    android:weightSum="4">
+
+                                    <ImageView
+                                        android:id="@+id/tvGenderSeat"
+                                        android:layout_width="@dimen/margin20"
+                                        android:layout_height="@dimen/margin24"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize14"
+                                        android:visibility="invisible"
+                                        app:srcCompat="@drawable/ic_seater_booked_by_male" />
+
+                                    <TextView
+                                        android:id="@+id/tvSeatNo"
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="left|center"
+                                        android:paddingLeft="@dimen/margin10"
+                                        android:text="Seat No"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize12" />
+
+                                    <TextView
+                                        android:id="@+id/tvSeatType"
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="left|center"
+                                        android:paddingLeft="@dimen/margin10"
+                                        android:text="Type"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize12" />
+
+                                    <TextView
+                                        android:id="@+id/tvGender"
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center|left"
+                                        android:paddingLeft="@dimen/margin4"
+                                        android:text="Gender"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize12" />
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center|right"
+                                        android:text="Price"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize12" />
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/mRecyclerView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin2">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:layout_marginBottom="@dimen/margin4"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="Contact Details"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/textSize12" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/margin2"
+                            app:cardUseCompatPadding="true">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin8">
+
+
+                                <TextView
+                                    android:id="@+id/tvName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:paddingTop="@dimen/margin2"
+                                    android:textSize="@dimen/textSize16"
+                                    android:textColor="@color/colorPrimaryText" />
+
+                                <TextView
+                                    android:id="@+id/tvMobile"
+                                    android:textSize="@dimen/textSize16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:textColor="@color/colorPrimaryText" />
+
+                                <TextView
+                                    android:id="@+id/tvEmail"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="@dimen/textSize16"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:textColor="@color/colorPrimaryText" />
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/margin8"
+                        android:paddingRight="@dimen/margin8">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin4"
+                            android:text="Payment Info"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/textSize12" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            app:cardCornerRadius="@dimen/margin2"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin8">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:text="Payment Made Through"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+
+                                    <TextView
+                                        android:id="@+id/tvPaymentMode"
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="right|center"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/margin8"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:text="Transaction Id"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+
+                                    <TextView
+                                        android:id="@+id/tvTransactionId"
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="right|center"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/margin8"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight="1.5"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:text="Insurance Amount"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+
+                                    <TextView
+                                        android:id="@+id/tvInsuranceAmount"
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight="0.5"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="right|center"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/margin8"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight="1.5"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:text="Tax Amount(18% GST)"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+
+                                    <TextView
+                                        android:id="@+id/tvTaxAmount"
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight=".5"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="right|center"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/margin8"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight="1.5"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:text="Sub Total"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+
+                                    <TextView
+                                        android:id="@+id/tvSubTotal"
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight=".5"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="right|center"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/margin8"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight="1.5"
+                                        android:fontFamily="@font/montserrat_semi_bold"
+                                        android:text="Total Amount"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+
+                                    <TextView
+                                        android:id="@+id/tvTotalAmount"
+                                        android:layout_width="@dimen/margin0"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_weight=".5"
+                                        android:fontFamily="@font/montserrat_semi_bold"
+                                        android:gravity="right|center"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/textSize16" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
                 </LinearLayout>
 
-
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/tvSave"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:paddingTop="@dimen/margin4"
-                    android:text="PNR NO"
-                    android:textColor="@color/colorSecondaryText"
-                    android:textSize="@dimen/textSize12" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
                     android:fontFamily="@font/muli_bold"
-                    android:paddingTop="@dimen/margin2"
-                    android:text="15513410111"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/textSize14" />
+                    android:gravity="center"
+                    android:padding="@dimen/margin10"
+                    android:text="Save and share"
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:paddingTop="@dimen/margin4"
-                    android:text="Date of Journey"
-                    android:textColor="@color/colorSecondaryText"
-                    android:textSize="@dimen/textSize12" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:paddingTop="@dimen/margin2"
-                    android:text="15513410111"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/textSize14" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:paddingTop="@dimen/margin4"
-                    android:text="Date of Booking"
-                    android:textColor="@color/colorSecondaryText"
-                    android:textSize="@dimen/textSize12" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:paddingTop="@dimen/margin2"
-                    android:text="15513410111"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/textSize14" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:paddingTop="@dimen/margin4"
-                    android:text="Boarding Point"
-                    android:textColor="@color/colorSecondaryText"
-                    android:textSize="@dimen/textSize12" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:paddingTop="@dimen/margin2"
-                    android:text="Jaora"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/textSize14" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:paddingTop="@dimen/margin4"
-                    android:text="Dropping Point"
-                    android:textColor="@color/colorSecondaryText"
-                    android:textSize="@dimen/textSize12" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:paddingTop="@dimen/margin2"
-                    android:text="Railway"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/textSize14" />
-
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textSize16" />
             </LinearLayout>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
-            </androidx.recyclerview.widget.RecyclerView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:layout_marginBottom="@dimen/margin4"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="Contact Details"
-                android:textColor="@color/colorHint"
-                android:textSize="@dimen/textSize14" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/border"
-                    android:orientation="vertical"
-                    android:padding="@dimen/margin8">
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_regular"
-                        android:paddingTop="@dimen/margin2"
-                        android:text="Ravinder Kumar"
-                        android:textColor="@color/colorPrimaryText" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_regular"
-                        android:text="8962328415"
-                        android:textColor="@color/colorPrimaryText" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_regular"
-                        android:text="raviganwal1992@gmail.com"
-                        android:textColor="@color/colorPrimaryText" />
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin4"
-                    android:text="Payment Info"
-                    android:textColor="@color/colorHint"
-                    android:textSize="@dimen/textSize14" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/border"
-                    android:orientation="vertical"
-                    android:padding="@dimen/margin8">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-                        <TextView
-                            android:layout_width="@dimen/margin0"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerInParent="true"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/montserrat_regular"
-                            android:text="Payment Made Through"
-                            android:textColor="@color/colorPrimaryText"
-                            android:textSize="@dimen/textSize14" />
-
-                        <TextView
-                            android:layout_width="@dimen/margin0"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerInParent="true"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/montserrat_regular"
-                            android:gravity="right|center"
-                            android:textColor="@color/colorPrimaryText"
-                            android:textSize="@dimen/textSize14" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/margin8"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-                        <TextView
-                            android:layout_width="@dimen/margin0"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerInParent="true"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/montserrat_regular"
-                            android:text="Transaction Id"
-                            android:textColor="@color/colorPrimaryText"
-                            android:textSize="@dimen/textSize14" />
-
-                        <TextView
-                            android:layout_width="@dimen/margin0"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerInParent="true"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/montserrat_regular"
-                            android:gravity="right|center"
-                            android:textColor="@color/colorPrimaryText"
-                            android:textSize="@dimen/textSize14" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/margin8"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-                        <TextView
-                            android:layout_width="@dimen/margin0"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerInParent="true"
-                            android:layout_weight="1.5"
-                            android:fontFamily="@font/montserrat_regular"
-                            android:text="Insurance Amount"
-                            android:textColor="@color/colorPrimaryText"
-                            android:textSize="@dimen/textSize14" />
-
-                        <TextView
-                            android:id="@+id/tvInsuranceAmount"
-                            android:layout_width="@dimen/margin0"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerInParent="true"
-                            android:layout_weight="0.5"
-                            android:fontFamily="@font/montserrat_regular"
-                            android:gravity="right|center"
-                            android:textColor="@color/colorPrimaryText"
-                            android:textSize="@dimen/textSize14" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/margin8"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-                        <TextView
-                            android:layout_width="@dimen/margin0"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerInParent="true"
-                            android:layout_weight="1.5"
-                            android:fontFamily="@font/montserrat_regular"
-                            android:text="Tax Amount(18% GST)"
-                            android:textColor="@color/colorPrimaryText"
-                            android:textSize="@dimen/textSize14" />
-
-                        <TextView
-                            android:id="@+id/tvTaxAmount"
-                            android:layout_width="@dimen/margin0"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerInParent="true"
-                            android:layout_weight=".5"
-                            android:fontFamily="@font/montserrat_regular"
-                            android:gravity="right|center"
-                            android:textColor="@color/colorPrimaryText"
-                            android:textSize="@dimen/textSize14" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/margin8"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-                        <TextView
-                            android:layout_width="@dimen/margin0"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerInParent="true"
-                            android:layout_weight="1.5"
-                            android:fontFamily="@font/montserrat_regular"
-                            android:text="Sub Total"
-                            android:textColor="@color/colorPrimaryText"
-                            android:textSize="@dimen/textSize14" />
-
-                        <TextView
-                            android:id="@+id/tvTotal"
-                            android:layout_width="@dimen/margin0"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerInParent="true"
-                            android:layout_weight=".5"
-                            android:fontFamily="@font/montserrat_regular"
-                            android:gravity="right|center"
-                            android:textColor="@color/colorPrimaryText"
-                            android:textSize="@dimen/textSize14" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/margin8"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-                        <TextView
-                            android:layout_width="@dimen/margin0"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerInParent="true"
-                            android:layout_weight="1.5"
-                            android:fontFamily="@font/montserrat_semi_bold"
-                            android:text="Total Amount"
-                            android:textColor="@color/colorPrimaryText"
-                            android:textSize="@dimen/textSize14" />
-
-                        <TextView
-                            android:id="@+id/tvTotalAmount"
-                            android:layout_width="@dimen/margin0"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerInParent="true"
-                            android:layout_weight=".5"
-                            android:fontFamily="@font/montserrat_semi_bold"
-                            android:gravity="right|center"
-                            android:textColor="@color/colorPrimaryText"
-                            android:textSize="@dimen/textSize14" />
-                    </LinearLayout>
-
-                </LinearLayout>
-            </LinearLayout>
-
-        </LinearLayout>
+        </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
-
-</LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

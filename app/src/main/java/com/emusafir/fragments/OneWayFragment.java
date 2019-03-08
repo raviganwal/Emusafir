@@ -51,7 +51,7 @@ public class OneWayFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private List<BusModel> mOnWardList;
     private BusAdapter mAdapter;
-    private TextView tvInfo;
+    private TextView tvInfo,tvDiscardReturn;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private MyProgressDialog mMyProgressDialog;
     private SearchModel mSearchModel;
@@ -115,6 +115,10 @@ public class OneWayFragment extends Fragment {
 
         mRecyclerView = rootView.findViewById(R.id.mRecyclerView);
         tvInfo = rootView.findViewById(R.id.tvInfo);
+
+        tvDiscardReturn = rootView.findViewById(R.id.tvDiscardReturn);
+        tvDiscardReturn.setVisibility(View.GONE);
+
         mSwipeRefreshLayout = rootView.findViewById(R.id.mSwipeRefreshLayout);
         mSwipeRefreshLayout.setColorSchemeResources(R.color.colorAccent, R.color.colorAccentDark);
     }

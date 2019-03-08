@@ -111,6 +111,7 @@ public class BookingListActivity extends AppCompatActivity {
         fabSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Utils.hideKeyboard(BookingListActivity.this);
                 checkConnection();
             }
         });
@@ -119,7 +120,7 @@ public class BookingListActivity extends AppCompatActivity {
     public void checkConnection() {
         boolean isConnected = ConnectivityReceiver.isConnected();
         if (isConnected) {
-                booking_list();
+            booking_list();
         } else
             Utils.showMessage(getString(R.string.not_connected_to_internet), BookingListActivity.this);
 //        showSnack(isConnected);

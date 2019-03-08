@@ -1,12 +1,14 @@
 package com.emusafir.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.emusafir.R;
+import com.emusafir.booking.BookingDetailsActivity;
 import com.emusafir.interfaces.OnCitySelected;
 import com.emusafir.model.booking.BookingModel;
 import com.emusafir.utility.Constant;
@@ -79,7 +81,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyViewHo
                 holder.tvPaymentStatus.setText("Booked");
             } else if (model.getPaymentStatus().equals(Constant.PENDING)) {
                 holder.tvPaymentStatus.setTextColor(ContextCompat.getColor(mContext, R.color.colorYellow));
-                holder.tvPaymentStatus.setText("Transaction Pending");
+                holder.tvPaymentStatus.setText("Pending");
             } else if (model.getPaymentStatus().equals(Constant.CANCEL)) {
                 holder.tvPaymentStatus.setTextColor(ContextCompat.getColor(mContext, R.color.colorHint));
                 holder.tvPaymentStatus.setText("Cancelled");
@@ -90,6 +92,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyViewHo
         holder.mCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mContext.startActivity(new Intent(mContext, BookingDetailsActivity.class).putExtra(Constant.OBJECT, model));
             }
         });
     }

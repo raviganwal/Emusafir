@@ -16,7 +16,7 @@ import android.widget.CheckBox;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.emusafir.model.booking.PendingBookedModel;
+import com.emusafir.model.PendingBookedModel;
 import com.emusafir.service.ApiClient;
 import com.emusafir.service.ApiInterface;
 import com.emusafir.userauth.LoginActivity;
@@ -386,7 +386,6 @@ public class PassengerDetailsActivity extends AppCompatActivity implements View.
         apiService.bookingseats(body).enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                Log.e(TAG, "call " + call.request().body());
                 if (mMyProgressDialog.isShowing())
                     mMyProgressDialog.dismiss();
 

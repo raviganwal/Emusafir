@@ -1,65 +1,73 @@
 
-gsquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(†´ìåÿÿÿÿÿ
-<squid:S1659<"&Declare "etMobile" on a separate line.(šıƒ
-gsquid:S1192«"HDefine a constant instead of duplicating this literal "seat_no" 4 times.(¬ïÑ€8µæ§‘-
-nsquid:UselessImportCheck ">Remove this unused import 'com.google.gson.reflect.TypeToken'.(İªıñøÿÿÿÿ8ëá—’-
-]squid:S1155®">Use isEmpty() to check whether the collection is empty or not.(¾Ô—Ñ8µæ§‘-
-Lsquid:S1659=".Declare "tvSeatsRoundTrip" on a separate line.(ĞçÍÁ8àæåö-
-Jsquid:S1659A"'Declare "mTotalTax" on a separate line.(ş¼Û‹ûÿÿÿÿ8øÛ£ş-
-usquid:S1450="WRemove the "tvCancel" field and declare it as a local variable in the relevant methods.(ĞçÍÁ8»¬Ÿ‘-
- squid:S1186±"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(á¬‡İ8µæ§‘-
-]"squid:SwitchLastCaseIsDefaultCheckï""Add a default case to this switch.(×“¾ñùÿÿÿÿ8µæ§‘-
-bsquid:CommentedOutCodeLinel"<This block of commented-out lines of code should be removed.(äü¶
-lsquid:S14509"URemove the "mEmail" field and declare it as a local variable in the relevant methods.(Ì‚ÔŒ
-tsquid:S1450="VRemove the "tvTotal" field and declare it as a local variable in the relevant methods.(ĞçÍÁ8ğÍæö-
-Ksquid:S1659="-Declare "tvCityRoundTrip" on a separate line.(ĞçÍÁ8Ö¤åö-
-squid:S1450H"\Remove the "rbInsuranceNo" field and declare it as a local variable in the relevant methods.(¥¾È»úÿÿÿÿ8èÓ§‘-
-Nsquid:S1481„"*Remove this unused "respo" local variable.(Ø´íõüÿÿÿÿ8ëá—’-
-Isquid:S1659="+Declare "tvSeatsOneWay" on a separate line.(ĞçÍÁ8ô©‘ş-
-Hsquid:S1659="*Declare "tvCityOneWAy" on a separate line.(ĞçÍÁ8üÉäö-
-hsquid:S1192©"IDefine a constant instead of duplicating this literal "seat_arr" 4 times.(ËÏÕ8µæ§‘-
-gsquid:S1192a"KDefine a constant instead of duplicating this literal "round_trip" 5 times.(¶¦÷¤øÿÿÿÿ
-<squid:S16599"%Declare "mMobile" on a separate line.(Ì‚ÔŒ
-X"squid:SwitchLastCaseIsDefaultCheck¸""Add a default case to this switch.(ºÖ8µæ§‘-
-zsquid:S1450="\Remove the "tvSeatsOneWay" field and declare it as a local variable in the relevant methods.(ĞçÍÁ8ÿ¾çö-
-}squid:S1450G"ZRemove the "rgInsurance" field and declare it as a local variable in the relevant methods.(è¬–èúÿÿÿÿ8ğïû-
-vsquid:S3776ô"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(§ëÏùúÿÿÿÿ8ëá—’-
-dsquid:UselessImportCheck"9Remove this unused import 'com.emusafir.model.CityModel'.(÷²åà8ëá—’-
-]squid:S1155À">Use isEmpty() to check whether the collection is empty or not.(»8µæ§‘-
-_squid:S1192]"HDefine a constant instead of duplicating this literal "one_way" 5 times.(Ó‰ÑË
-€squid:S1450H"]Remove the "rbInsuranceYes" field and declare it as a local variable in the relevant methods.(¥¾È»úÿÿÿÿ8ñË¦‘-
-osquid:CommentedOutCodeLine”"<This block of commented-out lines of code should be removed.(ÚÓ¡·üÿÿÿÿ8ëá—’-
-]squid:S1854„"9Remove this useless assignment to local variable "respo".(Ø´íõüÿÿÿÿ8ëá—’-
-Gsquid:S1659=")Declare "tvTaxAmount" on a separate line.(ĞçÍÁ8Êü–ş-
+osquid:CommentedOutCodeLineü"<This block of commented-out lines of code should be removed.(œ•´½ûÿÿÿÿ8ëá—’-
 ksquid:S14509"TRemove the "mName" field and declare it as a local variable in the relevant methods.(Ì‚ÔŒ
-`squid:UselessImportCheck'"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8ëá—’-
-Fsquid:S1659E"/Declare "roundTripArrayStr" on a separate line.(º–’¬
-Csquid:S1659="%Declare "tvTotal" on a separate line.(ĞçÍÁ8Êü–ş-
-gsquid:CommentedOutCodeLineT"<This block of commented-out lines of code should be removed.(ˆËöØüÿÿÿÿ
-usquid:S3776k"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(şñÊëÿÿÿÿÿ8ğïû-
-nsquid:S1450="WRemove the "tvPayNow" field and declare it as a local variable in the relevant methods.(ĞçÍÁ
-qsquid:S3776î"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¡é††8µæ§‘-
-msquid:S14509"VRemove the "mMobile" field and declare it as a local variable in the relevant methods.(Ì‚ÔŒ
-;squid:S1659<"%Declare "etEmail" on a separate line.(šıƒ
-\squid:UselessImportCheck"1Remove this unused import 'com.google.gson.Gson'.(–§8ëá—’-
-ysquid:S1450="[Remove the "tvCityOneWAy" field and declare it as a local variable in the relevant methods.(ĞçÍÁ8Ù¥´ş-
-Osquid:S1659F"2Declare "mSeatNoRoundTripList" on a separate line.(‹ùùp8Õ–íö-
+vsquid:S3776ú"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(§ëÏùúÿÿÿÿ8ëá—’-
+Hsquid:S1659="*Declare "tvCityOneWAy" on a separate line.(ĞçÍÁ8üÉäö-
 Nsquid:S1659H"+Declare "rbInsuranceNo" on a separate line.(¥¾È»úÿÿÿÿ8Îë‡û-
-Hsquid:S1068>",Remove this unused "chkTandC" private field.(¥–§Æûÿÿÿÿ
-:squid:S16599"#Declare "mName" on a separate line.(Ì‚ÔŒ
 Psquid:S1659="2Declare "tvTotalPayableAmount" on a separate line.(ĞçÍÁ8¡öãö-
-nsquid:S1450:"WRemove the "btnLogin" field and declare it as a local variable in the relevant methods.(ææ™Æ
-=squid:S1659;"&Declare "tilEmail" on a separate line.(¿ÛÊİ
-osquid:S1301ˆ"KReplace this "switch" statement by "if" statements to increase readability.(ƒ”¤Æşÿÿÿÿ8ëá—’-
-|squid:S1450="^Remove the "tvCityRoundTrip" field and declare it as a local variable in the relevant methods.(ĞçÍÁ8Ù¥´ş-
-Gsquid:S1148£"#Use a logger to log this exception.(¯Óí‘úÿÿÿÿ8ëá—’-
-Gsquid:S1148š"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëá—’-
-xsquid:S1450="ZRemove the "tvTaxAmount" field and declare it as a local variable in the relevant methods.(ĞçÍÁ8È’çö-
-Msquid:S1659="/Declare "tvInsuranceAmount" on a separate line.(ĞçÍÁ8á·•ş-
-}squid:S1450F"`Remove the "mSeatNoOneWayList" field and declare it as a local variable in the relevant methods.(‹ùùp8ã…Ä÷-
-Tsquid:S1068H"1Remove this unused "rbInsuranceNo" private field.(¥¾È»úÿÿÿÿ8—ê¬œ“-
- squid:S1186´"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Œğ£Â8µæ§‘-
->squid:S1659;"'Declare "tilMobile" on a separate line.(¿ÛÊİ
-=squid:S1659="&Declare "tvPayNow" on a separate line.(ĞçÍÁ
+gsquid:S1192b"KDefine a constant instead of duplicating this literal "round_trip" 5 times.(¶¦÷¤øÿÿÿÿ
+]squid:S1155Á">Use isEmpty() to check whether the collection is empty or not.(»8µæ§‘-
+tsquid:S1450="VRemove the "tvTotal" field and declare it as a local variable in the relevant methods.(ĞçÍÁ8ğÍæö-
 }squid:S1450="_Remove the "tvSeatsRoundTrip" field and declare it as a local variable in the relevant methods.(ĞçÍÁ8Õëçö-
-osquid:CommentedOutCodeLineö"<This block of commented-out lines of code should be removed.(œ•´½ûÿÿÿÿ8ëá—’-
+}squid:S1450F"`Remove the "mSeatNoOneWayList" field and declare it as a local variable in the relevant methods.(‹ùùp8ã…Ä÷-
+gsquid:CommentedOutCodeLineU"<This block of commented-out lines of code should be removed.(ˆËöØüÿÿÿÿ
+>squid:S1659;"'Declare "tilMobile" on a separate line.(¿ÛÊİ
+Gsquid:S1659=")Declare "tvTaxAmount" on a separate line.(ĞçÍÁ8Êü–ş-
+gsquid:S1192¬"HDefine a constant instead of duplicating this literal "seat_no" 4 times.(¬ïÑ€8µæ§‘-
+Osquid:S1659F"2Declare "mSeatNoRoundTripList" on a separate line.(‹ùùp8Õ–íö-
+<squid:S1659<"&Declare "etMobile" on a separate line.(šıƒ
+Isquid:S1659="+Declare "tvSeatsOneWay" on a separate line.(ĞçÍÁ8ô©‘ş-
+Fsquid:S1659E"/Declare "roundTripArrayStr" on a separate line.(º–’¬
+Hsquid:S1068>",Remove this unused "chkTandC" private field.(¥–§Æûÿÿÿÿ
+}squid:S1450G"ZRemove the "rgInsurance" field and declare it as a local variable in the relevant methods.(è¬–èúÿÿÿÿ8ğïû-
+msquid:S14509"VRemove the "mMobile" field and declare it as a local variable in the relevant methods.(Ì‚ÔŒ
+Msquid:S1659="/Declare "tvInsuranceAmount" on a separate line.(ĞçÍÁ8á·•ş-
+squid:S1450H"\Remove the "rbInsuranceNo" field and declare it as a local variable in the relevant methods.(¥¾È»úÿÿÿÿ8èÓ§‘-
+]"squid:SwitchLastCaseIsDefaultCheckğ""Add a default case to this switch.(×“¾ñùÿÿÿÿ8µæ§‘-
+usquid:S3776l"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(şñÊëÿÿÿÿÿ8ğïû-
+Gsquid:S1148¢"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëá—’-
+_squid:S1192^"HDefine a constant instead of duplicating this literal "one_way" 5 times.(Ó‰ÑË
+<squid:S16599"%Declare "mMobile" on a separate line.(Ì‚ÔŒ
+Jsquid:S1659A"'Declare "mTotalTax" on a separate line.(ş¼Û‹ûÿÿÿÿ8øÛ£ş-
+Ksquid:S1659="-Declare "tvCityRoundTrip" on a separate line.(ĞçÍÁ8Ö¤åö-
+osquid:CommentedOutCodeLineœ"<This block of commented-out lines of code should be removed.(ÚÓ¡·üÿÿÿÿ8ëá—’-
+hsquid:S1192ª"IDefine a constant instead of duplicating this literal "seat_arr" 4 times.(ËÏÕ8µæ§‘-
+ squid:S1186ü"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(á¬‡İ8µæ§‘-
+Tsquid:S1068H"1Remove this unused "rbInsuranceNo" private field.(¥¾È»úÿÿÿÿ8—ê¬œ“-
+=squid:S1659="&Declare "tvPayNow" on a separate line.(ĞçÍÁ
+|squid:S1450="^Remove the "tvCityRoundTrip" field and declare it as a local variable in the relevant methods.(ĞçÍÁ8Ù¥´ş-
+€squid:S1450H"]Remove the "rbInsuranceYes" field and declare it as a local variable in the relevant methods.(¥¾È»úÿÿÿÿ8ñË¦‘-
+nsquid:S1450="WRemove the "tvPayNow" field and declare it as a local variable in the relevant methods.(ĞçÍÁ
+qsquid:S3776ï"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¡é††8µæ§‘-
+xsquid:S1450="ZRemove the "tvTaxAmount" field and declare it as a local variable in the relevant methods.(ĞçÍÁ8È’çö-
+Lsquid:S1659=".Declare "tvSeatsRoundTrip" on a separate line.(ĞçÍÁ8àæåö-
+:squid:S16599"#Declare "mName" on a separate line.(Ì‚ÔŒ
+osquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ƒ”¤Æşÿÿÿÿ8ëá—’-
+;squid:S1659<"%Declare "etEmail" on a separate line.(šıƒ
+X"squid:SwitchLastCaseIsDefaultCheckƒ""Add a default case to this switch.(ºÖ8µæ§‘-
+ squid:S1186ÿ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Œğ£Â8µæ§‘-
+gsquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(†´ìåÿÿÿÿÿ
+Gsquid:S1148«"#Use a logger to log this exception.(¯Óí‘úÿÿÿÿ8ëá—’-
+ysquid:S1450="[Remove the "tvCityOneWAy" field and declare it as a local variable in the relevant methods.(ĞçÍÁ8Ù¥´ş-
+zsquid:S1450="\Remove the "tvSeatsOneWay" field and declare it as a local variable in the relevant methods.(ĞçÍÁ8ÿ¾çö-
+lsquid:S14509"URemove the "mEmail" field and declare it as a local variable in the relevant methods.(Ì‚ÔŒ
+Csquid:S1659="%Declare "tvTotal" on a separate line.(ĞçÍÁ8Êü–ş-
+=squid:S1659;"&Declare "tilEmail" on a separate line.(¿ÛÊİ
+usquid:S1450="WRemove the "tvCancel" field and declare it as a local variable in the relevant methods.(ĞçÍÁ8»¬Ÿ‘-
+bsquid:CommentedOutCodeLinem"<This block of commented-out lines of code should be removed.(äü¶
+nsquid:S1450:"WRemove the "btnLogin" field and declare it as a local variable in the relevant methods.(ææ™Æ
+]squid:S1155¯">Use isEmpty() to check whether the collection is empty or not.(¾Ô—Ñ8µæ§‘-
+lsquid:S1192–"HDefine a constant instead of duplicating this literal "message" 4 times.(ƒ «¼ıÿÿÿÿ8¬ÙÎ³•-
+osquid:S1301Ó"KReplace this "switch" statement by "if" statements to increase readability.(ƒ”¤Æşÿÿÿÿ8¬ÙÎ³•-
+osquid:CommentedOutCodeLineá"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8¬ÙÎ³•-
+isquid:CommentedOutCodeLineæ"<This block of commented-out lines of code should be removed.(ö¾™8¬ÙÎ³•-
+osquid:CommentedOutCodeLineï"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8¬ÙÎ³•-
+isquid:CommentedOutCodeLineô"<This block of commented-out lines of code should be removed.(ö¾™8¬ÙÎ³•-
+osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(§Œ˜ïûÿÿÿÿ8¬ÙÎ³•-
+osquid:CommentedOutCodeLine³"<This block of commented-out lines of code should be removed.(œ•´½ûÿÿÿÿ8¬ÙÎ³•-
+osquid:CommentedOutCodeLineß"<This block of commented-out lines of code should be removed.(ÚÓ¡·üÿÿÿÿ8¬ÙÎ³•-
+qsquid:S3776±"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Üëğ8¬ÙÎ³•-
+qsquid:S00117±"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Üëğ8¬ÙÎ³•-
+qsquid:S00117±"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Üëğ8¬ÙÎ³•-
+Gsquid:S1148å"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬ÙÎ³•-
+Gsquid:S1148î"#Use a logger to log this exception.(¯Óí‘úÿÿÿÿ8¬ÙÎ³•-

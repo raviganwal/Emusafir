@@ -1,0 +1,46 @@
+
+Psquid:S16597"-Declare "tvDroppingPoint" on a separate line.(­íÿòüÿÿÿÿ8£Ð‹À•-
+Gsquid:S16597"$Declare "tvName" on a separate line.(­íÿòüÿÿÿÿ8£Ð‹À•-
+Hsquid:S16597"%Declare "tvPnrNo" on a separate line.(­íÿòüÿÿÿÿ8£Ð‹À•-
+Esquid:S16597""Declare "tvTo" on a separate line.(­íÿòüÿÿÿÿ8£Ð‹À•-
+Gsquid:S16598"$Declare "tvSave" on a separate line.(»‰ÁÎùÿÿÿÿ8£Ð‹À•-
+xsquid:S14508"URemove the "tvSave" field and declare it as a local variable in the relevant methods.(»‰ÁÎùÿÿÿÿ8£Ð‹À•-
+osquid:CommentedOutCodeLineÔ"<This block of commented-out lines of code should be removed.(ÚÓ¡·üÿÿÿÿ8£Ð‹À•-
+Qsquid:S1135Ž"2Complete the task associated to this TODO comment.(‡ñÅ¼8£Ð‹À•-
+osquid:CommentedOutCodeLine“"<This block of commented-out lines of code should be removed.(×ûžùúÿÿÿÿ8Ø¢¨À•-
+Nsquid:S16598"+Declare "tvArrivalTime" on a separate line.(»‰ÁÎùÿÿÿÿ8ŒËÙÀ•-
+Psquid:S16597"-Declare "tvDateOfBooking" on a separate line.(­íÿòüÿÿÿÿ8£Ð‹À•-
+osquid:CommentedOutCodeLineö"<This block of commented-out lines of code should be removed.(¨Çž¾øÿÿÿÿ8£Ð‹À•-
+Isquid:S00108¸")Either remove or fill this block of code.(â¸¯ˆ8£Ð‹À•-
+osquid:CommentedOutCodeLine–"<This block of commented-out lines of code should be removed.(†ÿ£²ýÿÿÿÿ8£Ð‹À•-
+Rsquid:S16598"/Declare "tvInsuranceAmount" on a separate line.(»‰ÁÎùÿÿÿÿ8¼“¶•-
+Jsquid:S1075ô"&Remove this hard-coded path-delimiter.(ñÈ›Ëûÿÿÿÿ8£Ð‹À•-
+osquid:CommentedOutCodeLine¤"<This block of commented-out lines of code should be removed.(ÈØˆŠüÿÿÿÿ8£Ð‹À•-
+Gsquid:S1148á"#Use a logger to log this exception.(¯Óí‘úÿÿÿÿ8£Ð‹À•-
+osquid:S1301È"KReplace this "switch" statement by "if" statements to increase readability.(ƒ”¤Æþÿÿÿÿ8£Ð‹À•-
+isquid:CommentedOutCodeLineS"<This block of commented-out lines of code should be removed.(À¸—ï8£Ð‹À•-
+osquid:CommentedOutCodeLineŠ"<This block of commented-out lines of code should be removed.(åÆËæûÿÿÿÿ8£Ð‹À•-
+nsquid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(ŸŽÐ½ÿÿÿÿÿ8£Ð‹À•-
+Gsquid:S1148ü"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8£Ð‹À•-
+Nsquid:S16598"+Declare "tvPaymentMode" on a separate line.(»‰ÁÎùÿÿÿÿ8¼“¶•-
+Ksquid:S16598"(Declare "tvSubTotal" on a separate line.(»‰ÁÎùÿÿÿÿ8¼“¶•-
+nsquid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(ä†¤ˆþÿÿÿÿ8£Ð‹À•-
+Gsquid:S1148Ú"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8£Ð‹À•-
+]"squid:SwitchLastCaseIsDefaultCheckµ""Add a default case to this switch.(×ö³–úÿÿÿÿ8£Ð‹À•-
+[squid:UselessImportCheck1"0Remove this unused import 'retrofit2.http.HTTP'.(Ì˜Òá8‡ý§À•-
+Psquid:S16597"-Declare "tvBoardingPoint" on a separate line.(­íÿòüÿÿÿÿ8£Ð‹À•-
+Gsquid:S1148ƒ"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8£Ð‹À•-
+osquid:S1301µ"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ8£Ð‹À•-
+Psquid:S16598"-Declare "tvDepartureTime" on a separate line.(»‰ÁÎùÿÿÿÿ8°”ÙÀ•-
+Psquid:S16597"-Declare "tvDateOfJourney" on a separate line.(­íÿòüÿÿÿÿ8£Ð‹À•-
+Gsquid:S16597"$Declare "tvFrom" on a separate line.(­íÿòüÿÿÿÿ8£Ð‹À•-
+Isquid:S16598"&Declare "tvMobile" on a separate line.(»‰ÁÎùÿÿÿÿ8¼“¶•-
+Psquid:S16598"-Declare "tvTransactionId" on a separate line.(»‰ÁÎùÿÿÿÿ8¼“¶•-
+Hsquid:S16598"%Declare "tvEmail" on a separate line.(»‰ÁÎùÿÿÿÿ8¼“¶•-
+Lsquid:S16598")Declare "tvTaxAmount" on a separate line.(»‰ÁÎùÿÿÿÿ8¼“¶•-
+Nsquid:S16598"+Declare "tvTotalAmount" on a separate line.(»‰ÁÎùÿÿÿÿ8¼“¶•-
+Vsquid:S10688"3Remove this unused "tvDepartureTime" private field.(»‰ÁÎùÿÿÿÿ8à¶ØÁ•-
+Tsquid:S10688"1Remove this unused "tvArrivalTime" private field.(»‰ÁÎùÿÿÿÿ8à¶ØÁ•-
+squid:S14508"^Remove the "tvDepartureTime" field and declare it as a local variable in the relevant methods.(»‰ÁÎùÿÿÿÿ8à¶ØÁ•-
+squid:S14508"\Remove the "tvArrivalTime" field and declare it as a local variable in the relevant methods.(»‰ÁÎùÿÿÿÿ8à¶ØÁ•-
+jsquid:CommentedOutCodeLine´"<This block of commented-out lines of code should be removed.(ÐßÅÜ8à¶ØÁ•-

@@ -122,7 +122,13 @@ public class RoundTripFragment extends Fragment {
         mRecyclerView = rootView.findViewById(R.id.mRecyclerView);
         tvInfo = rootView.findViewById(R.id.tvInfo);
         tvDiscardReturn = rootView.findViewById(R.id.tvDiscardReturn);
-        tvDiscardReturn.getParent().requestChildFocus(tvDiscardReturn, tvDiscardReturn);
+        try {
+            if (App.getInstance().getPrefManager().getOneWayOrRoundTripOnProgress().equalsIgnoreCase(Constant.ROUND_TRIP))
+                tvDiscardReturn.setVisibility(View.VISIBLE);
+        } catch (Exception e) {
+            tvDiscardReturn.setVisibility(View.GONE);
+            e.printStackTrace();
+        }
         mSwipeRefreshLayout = rootView.findViewById(R.id.mSwipeRefreshLayout);
         mSwipeRefreshLayout.setColorSchemeResources(R.color.colorAccent, R.color.colorAccentDark);
 

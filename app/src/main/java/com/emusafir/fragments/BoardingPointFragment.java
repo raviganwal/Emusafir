@@ -2,6 +2,7 @@ package com.emusafir.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,6 +54,9 @@ public class BoardingPointFragment extends Fragment implements OnPointSelected {
         mRecyclerView = view.findViewById(R.id.mRecyclerView);
 
 
+        for (int i = 0; i < mList.size(); i++) {
+            Log.e(TAG, "BOARD "+mList.get(i).getId() + " " + mList.get(i).getName());
+        }
         mAdapter = new BoardingPointAdapter(mList, getActivity(), this);
 
 
@@ -79,6 +83,7 @@ public class BoardingPointFragment extends Fragment implements OnPointSelected {
 
     @Override
     public void onPointSelected(PointModel point, final boolean isBoarding) {
+        Log.e(TAG,point.getId()+" "+point.getName()+" "+isBoarding);
         mNotifyPointLayout.notifyPointLayout(point, isBoarding);
     }
 

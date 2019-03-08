@@ -30,12 +30,12 @@
                 android:layout_toLeftOf="@+id/fabSearch"
                 android:background="@null"
                 android:digits="0123456789"
-                android:fontFamily="@font/muli_regular"
+                android:fontFamily="@font/muli_bold"
                 android:hint="PNR No/Mobile No"
                 android:inputType="number"
                 android:padding="@dimen/margin10"
                 android:textColor="@color/colorPrimaryText"
-                android:textSize="@dimen/textSize14" />
+                android:textSize="@dimen/textSize16" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fabSearch"

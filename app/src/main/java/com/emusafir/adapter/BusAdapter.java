@@ -165,7 +165,7 @@ public class BusAdapter extends RecyclerView.Adapter<BusAdapter.MyViewHolder> {
                     App.getInstance().getPrefManager().setOneWayOrRoundTripOnProgress(Constant.ROUND_TRIP);
                     date = mSearchModel.getReturnDate();
                     Log.e(TAG, date);
-
+                    Log.e(TAG,  App.getInstance().getPrefManager().getOneWayOrRoundTripOnProgress());
                     App.getInstance().getPrefManager().setRoundTripBus(new BusUserSelectedData(model.getBusId(), model.getRouteId(), mSearchModel.getReturnDate(), model.getSourceCityName(), model.getDestinationCityName()));
                 } else {
                     if (App.getInstance().getPrefManager().getOneWayOrRoundTripOnProgress() != null && App.getInstance().getPrefManager().getOneWayOrRoundTripOnProgress().equalsIgnoreCase(Constant.ROUND_TRIP)) {
@@ -175,6 +175,7 @@ public class BusAdapter extends RecyclerView.Adapter<BusAdapter.MyViewHolder> {
                     App.getInstance().getPrefManager().setOneWayOrRoundTripOnProgress(Constant.ONE_WAY);
                     date = mSearchModel.getOnwardDate();
                     Log.e(TAG, date);
+                    Log.e(TAG,  App.getInstance().getPrefManager().getOneWayOrRoundTripOnProgress());
                     App.getInstance().getPrefManager().setOneWayBus(new BusUserSelectedData(model.getBusId(), model.getRouteId(), mSearchModel.getOnwardDate(), model.getSourceCityName(), model.getDestinationCityName()));
                 }
 //                .putExtra("bus_id", model.getBusId()).putExtra("book_date", date).putExtra("route_id", model.getRouteId())
